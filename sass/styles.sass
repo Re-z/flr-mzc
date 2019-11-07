@@ -25,7 +25,7 @@ $orange: #FDD762
     &::selection
         background: $orange
         color: #2D2F32
-
+    
 a, button
     transition: .5s
 
@@ -35,12 +35,28 @@ body
 .intro
     background: #FBFBFB
     color: #2D2F32
+    position: relative
+    z-index: 1
+    &:after
+        width: 770px
+        height: 410px
+        display: block
+        content: ''
+        background: url(../img/circles.png) center center
+        position: absolute
+        top: 0
+        right: 0
+        z-index: -1
+        +r($mob)
+            display: none
     &__container
         padding: 50px 10px
         width: 1260px
         margin: 0 auto
+        position: relative
         +r($desc)
             width: 100%
+            overflow: hidden
     &__heading
         margin-bottom: 45px
     &__box
@@ -117,8 +133,10 @@ body
         right: -110px
         top: -30px
         user-select: none
-        img
-            user-select: none
+    &__pic
+        user-select: none
+        +r($desc)
+            filter: blur(4px)
 
 .btn
     background: $green
@@ -208,6 +226,28 @@ body
 .sub
     background: #FBFBFB
     color: #2D2F32
+    position: relative
+    overflow: hidden
+    z-index: 1
+    &:before, &:after
+        width: 738px
+        height: 443px
+        display: block
+        content: ''
+        background: url(../img/circles1.png) center center no-repeat
+        position: absolute
+        z-index: 0
+        top: -40px
+        right: 0
+        z-index: -1
+        +r($mob)
+            // display: none
+    &:after
+        background-image: url(../img/circles2.png)
+        width: 813px
+        height: 454px
+        bottom: -70px
+        top: auto
     &__container
         padding: 50px 10px
         width: 1260px
