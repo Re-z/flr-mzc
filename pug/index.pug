@@ -29,8 +29,27 @@ block content
 							p Facts and  <br>  benefits only
 							p Examples  <br>  from practice
 						.intro__left-bottom
-							.counter
-							a.btn(href="#") Download
+							.intro__counter
+
+								.page-countdown__block
+									.page-countdown__title The action will end in
+									.page-countdown__time-wrapper
+										.js-days.page-countdown__time 03
+										.page-countdown__text Days
+									.page-countdown__divider :
+									.page-countdown__time-wrapper
+										.js-hours.page-countdown__time 19
+										.page-countdown__text Hours
+									.page-countdown__divider :
+									.page-countdown__time-wrapper
+										.js-minutes.page-countdown__time 37
+										.page-countdown__text Minutes
+									.page-countdown__divider :
+									.page-countdown__time-wrapper
+										.js-seconds.page-countdown__time 56
+										.page-countdown__text Seconds
+
+							a.btn.intro__btn(href="#") Download
 					.intro__right
 						picture
 							source(type="image/webp" srcset="img/intro-bg.webp")
@@ -60,7 +79,6 @@ block content
 							p.sub__steps-item.ico-comp Personalized counselling from a professional investor
 						p.sub__cta-text Download “The basics of online trading” and fing out how to multiply your savings!
 					.sub__right
-						
 						include not-compiling/form.pug
 						script.
 							var srcUtils = "intlTel/js/utils.js"

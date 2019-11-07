@@ -30,7 +30,30 @@
                   <p>Examples  <br>  from practice</p>
                 </div>
                 <div class="intro__left-bottom">
-                  <div class="counter"></div><a class="btn" href="#">Download</a>
+                  <div class="intro__counter">
+                    <div class="page-countdown__block">
+                      <div class="page-countdown__title">The action will end in</div>
+                      <div class="page-countdown__time-wrapper">
+                        <div class="js-days page-countdown__time">03</div>
+                        <div class="page-countdown__text">Days</div>
+                      </div>
+                      <div class="page-countdown__divider">:</div>
+                      <div class="page-countdown__time-wrapper">
+                        <div class="js-hours page-countdown__time">19</div>
+                        <div class="page-countdown__text">Hours</div>
+                      </div>
+                      <div class="page-countdown__divider">:</div>
+                      <div class="page-countdown__time-wrapper">
+                        <div class="js-minutes page-countdown__time">37</div>
+                        <div class="page-countdown__text">Minutes</div>
+                      </div>
+                      <div class="page-countdown__divider">:</div>
+                      <div class="page-countdown__time-wrapper">
+                        <div class="js-seconds page-countdown__time">56</div>
+                        <div class="page-countdown__text">Seconds</div>
+                      </div>
+                    </div>
+                  </div><a class="btn intro__btn" href="#">Download</a>
                 </div>
               </div>
               <div class="intro__right">
@@ -66,7 +89,7 @@
                 <p class="sub__cta-text">Download “The basics of online trading” and fing out how to multiply your savings!</p>
               </div>
               <div class="sub__right">
-                <div class="register-form-wrapper">
+                <div class="register-form-wrapper" id="sendForm">
                   <div class="register-form-title title"><span>Hurry up to get the book </span> for free!</div>
                   <form class="register-form form" action="https://www.monfex.com/api/register" method="post" novalidate="">
                     <label class="form-input">
@@ -1542,9 +1565,6 @@
                           </div>
                           <input type="tel" name="phone-num" placeholder="Phone" autocomplete="off" data-intl-tel-input-id="0">
                         </div></span></div>
-                    <label class="form-input form-checkbox">
-                      <input type="checkbox" name="terms"><span class="form-checkbox-icon"></span><span class="form-checkbox-descr text">By checking this box I agree to the Monfex<a href="https://www.monfex.com/privacy-policy" target="_blank">Privacy Policy</a>&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;and<a href="https://www.monfex.com/terms-of-service" target="_blank">Terms of Service</a>.</span>
-                    </label>
                     <!-- /.form-input-->
                     <input class="input-hidden" type="hidden" name="country" value="" autocomplete="off">
                     <input class="input-hidden" type="hidden" name="phone" value="">
@@ -1553,7 +1573,7 @@
                     <input type="hidden" name="affiliate_code" value="">
                     <input type="hidden" name="partner_link" value="">
                     <input type="hidden" name="source" value="invest">
-                    <button class="form-btn btn" type="submit">Join Now !
+                    <button class="form-btn btn" type="submit">Download
                       <div class="loader">
                         <div></div>
                         <div></div>
@@ -1569,8 +1589,10 @@
                         <div></div>
                       </div>
                     </button>
+                    <label class="form-input form-checkbox">
+                      <input type="checkbox" name="terms"><span class="form-checkbox-icon"></span><span class="form-checkbox-descr text">By submitting this form, <a href="https://www.monfex.com/privacy-policy" target="_blank">I accept the conditions for processing personal data </a></span>
+                    </label>
                   </form>
-                  <div class="register-form-descr text">Already have a Monfex account? Please <a href="https://trade.monfex.com" target="_blank">login</a>.</div>
                 </div>
                 <script>
                   var srcUtils = "intlTel/js/utils.js"
@@ -1588,6 +1610,8 @@
         </footer>
       </main>
     </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/timer.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

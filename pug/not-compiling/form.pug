@@ -1,4 +1,4 @@
-.register-form-wrapper
+.register-form-wrapper#sendForm
   .register-form-title.title <span>Hurry up to get the book </span> for free!
   form.register-form.form(action='https://www.monfex.com/api/register' method='post' novalidate='')
     label.form-input
@@ -1468,15 +1468,13 @@
                 span.country-name &angst;land Islands
                 span.dial-code +358
           input(type='tel' name='phone-num' placeholder='Phone' autocomplete='off' data-intl-tel-input-id='0')
-    label.form-input.form-checkbox
-      input(type='checkbox' name='terms')
-      span.form-checkbox-icon
-      span.form-checkbox-descr.text
-        | By checking this box I agree to the Monfex
-        a(href='https://www.monfex.com/privacy-policy' target='_blank') Privacy Policy
-        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;and
-        a(href='https://www.monfex.com/terms-of-service' target='_blank') Terms of Service
-        | .
+    
+
+        //- | By checking this box I agree to the Monfex
+        //- a(href='https://www.monfex.com/privacy-policy' target='_blank') Privacy Policy
+        //- | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;and
+        //- a(href='https://www.monfex.com/terms-of-service' target='_blank') Terms of Service
+        //- | .
     // /.form-input
     input.input-hidden(type='hidden' name='country' value='' autocomplete='off')
     input.input-hidden(type='hidden' name='phone' value='')
@@ -1486,7 +1484,7 @@
     input(type='hidden' name='partner_link' value='')
     input(type='hidden' name='source' value='invest')
     button.form-btn.btn(type='submit')
-      | Join Now !
+      | Download
       .loader
         div
         div
@@ -1500,7 +1498,15 @@
         div
         div
         div
-  .register-form-descr.text
-    | Already have a Monfex account? Please 
-    a(href='https://trade.monfex.com' target='_blank') login
-    | .
+    label.form-input.form-checkbox
+      input(type='checkbox' name='terms')
+      span.form-checkbox-icon
+      span.form-checkbox-descr.text
+        | By submitting this form, 
+        a(href="https://www.monfex.com/privacy-policy" target="_blank") I accept the conditions for processing personal data 
+      
+        
+  //- .register-form-descr.text
+  //-   | Already have a Monfex account? Please 
+  //-   a(href='https://trade.monfex.com' target='_blank') login
+  //-   | .

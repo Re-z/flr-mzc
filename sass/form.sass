@@ -1,4 +1,5 @@
 @charset "UTF-8"
+$green: #00AA80
 $orange: #FDD762
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css
@@ -705,7 +706,8 @@ summary
                 padding-left: 6em
 
   .select2-results__option--highlighted[aria-selected]
-    background-color: #5897fb
+    // background-color: $orange
+    background-color: $orange
     color: #fff
 
   .select2-results__group
@@ -724,7 +726,7 @@ summary
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0)
 
     &:focus
-      border: 1px solid #5897fb
+      border: 1px solid $orange
 
     .select2-selection__rendered
       color: #444
@@ -769,7 +771,7 @@ summary
 
   &.select2-container--open
     .select2-selection--single
-      border: 1px solid #5897fb
+      border: 1px solid $orange
 
       .select2-selection__arrow
         background: 0 0
@@ -799,7 +801,7 @@ summary
     outline: 0
 
     &:focus
-      border: 1px solid #5897fb
+      border: 1px solid $orange
 
     .select2-selection__rendered
       list-style: none
@@ -841,7 +843,7 @@ summary
 
   &.select2-container--open
     .select2-selection--multiple
-      border: 1px solid #5897fb
+      border: 1px solid $orange
 
     &.select2-container--above .select2-selection--multiple
       border-top: none
@@ -895,7 +897,7 @@ h1, h2, h3
     padding: 6px
 
   &.select2-container--open .select2-dropdown
-    border-color: #5897fb
+    border-color: $orange
 
 h1, h2, h3
   margin: 0
@@ -981,9 +983,9 @@ p, ul
   input
     box-sizing: border-box
     width: 100%
-    padding: 9px 9px 8px
+    padding: 9px
     background-color: #fff
-    border: 1px solid transparent
+    border: 1px solid #9F999B
     border-radius: 3px
     font-family: 'Open Sans',sans-serif
     font-size: 14px
@@ -1005,6 +1007,8 @@ p, ul
 
 .form-btn
   position: relative
+  cursor: pointer
+  margin-bottom: 15px
 
 .errors-block
   margin-top: 5px
@@ -1076,16 +1080,16 @@ p, ul
   display: block
   padding-left: 27px
   font-family: 'Open Sans',sans-serif
-  color: #fff
+  color: #2D2F32
+  font-size: 11px
   -webkit-user-select: none
   -moz-user-select: none
   -ms-user-select: none
   user-select: none
 
   a
-    font-weight: 700
-    color: #00aa80
-    text-decoration: none
+    color: inherit
+    text-decoration: underline
 
     &:hover
       text-decoration: underline
@@ -1135,11 +1139,11 @@ p, ul
 .form-input
   .select2
     width: 100% !important
-
+    transition: 0s !important
   .select2-selection.select2-selection--single
     height: 37px !important
     background-color: #fff
-    border: 1px solid transparent
+    border: 1px solid #9F999B
     border-radius: 3px
 
     &.error
@@ -1951,7 +1955,7 @@ form .form-btn .loader
 
 .register-form-wrapper
   max-width: 417px
-  padding: 25px 0 35px 0
+  padding: 25px 0 25px 0
   // padding: 25px 55px 20px
   background-color: #4f5555
   background: #FFFFFF
