@@ -1,0 +1,1506 @@
+.register-form-wrapper
+  .register-form-title.title <span>Hurry up to get the book </span> for free!
+  form.register-form.form(action='https://www.monfex.com/api/register' method='post' novalidate='')
+    label.form-input
+      input(type='text' name='first_name' placeholder='Name')
+    .form-input
+      select.select-country.select2-hidden-accessible(name='select-country' placeholder='Select Country' tabindex='-1' aria-hidden='true')
+        option
+        option(value='af' data-code='93' data-country='Afghanistan') Afghanistan
+        option(value='ax' data-code='358' data-country='Åland Islands') &angst;land Islands
+        option(value='al' data-code='355' data-country='Albania') Albania
+        option(value='dz' data-code='213' data-country='Algeria') Algeria
+        option(value='as' data-code='1684' data-country='American Samoa') American Samoa
+        option(value='ad' data-code='376' data-country='Andorra') Andorra
+        option(value='ao' data-code='244' data-country='Angola') Angola
+        option(value='ai' data-code='1264' data-country='Anguilla') Anguilla
+        option(value='aq' data-code='672' data-country='Antarctica') Antarctica
+        option(value='ag' data-code='1268' data-country='Antigua & Barbuda') Antigua &amp; Barbuda
+        option(value='ar' data-code='54' data-country='Argentina') Argentina
+        option(value='am' data-code='374' data-country='Armenia') Armenia
+        option(value='aw' data-code='297' data-country='Aruba') Aruba
+        option(value='au' data-code='61' data-country='Australia') Australia
+        option(value='at' data-code='43' data-country='Austria') Austria
+        option(value='az' data-code='994' data-country='Azerbaijan') Azerbaijan
+        option(value='bs' data-code='1242' data-country='Bahamas') Bahamas
+        option(value='bh' data-code='973' data-country='Bahrain') Bahrain
+        option(value='bd' data-code='880' data-country='Bangladesh') Bangladesh
+        option(value='bb' data-code='1246' data-country='Barbados') Barbados
+        option(value='by' data-code='375' data-country='Belarus') Belarus
+        option(value='be' data-code='32' data-country='Belgium') Belgium
+        option(value='bz' data-code='501' data-country='Belize') Belize
+        option(value='bj' data-code='229' data-country='Benin') Benin
+        option(value='bm' data-code='1441' data-country='Bermuda') Bermuda
+        option(value='bt' data-code='975' data-country='Bhutan') Bhutan
+        option(value='bo' data-code='591' data-country='Bolivia') Bolivia
+        option(value='ba' data-code='387' data-country='Bosnia & Herzegovina') Bosnia &amp; Herzegovina
+        option(value='bw' data-code='267' data-country='Botswana') Botswana
+        option(value='bv' data-code='55' data-country='Bouvet Island') Bouvet Island
+        option(value='br' data-code='55' data-country='Brazil') Brazil
+        option(value='bn' data-code='673' data-country='Brunei') Brunei
+        option(value='bg' data-code='359' data-country='Bulgaria') Bulgaria
+        option(value='bf' data-code='226' data-country='Burkina Faso') Burkina Faso
+        option(value='bi' data-code='257' data-country='Burundi') Burundi
+        option(value='kh' data-code='855' data-country='Cambodia') Cambodia
+        option(value='cm' data-code='237' data-country='Cameroon') Cameroon
+        option(value='ca' data-code='1' data-country='Canada') Canada
+        option(value='cv' data-code='238' data-country='Cape Verde') Cape Verde
+        option(value='ky' data-code='1345' data-country='Cayman Islands') Cayman Islands
+        option(value='td' data-code='235' data-country='Chad') Chad
+        option(value='cl' data-code='56' data-country='Chile') Chile
+        option(value='cn' data-code='86' data-country='China') China
+        option(value='cx' data-code='61' data-country='Christmas Island') Christmas Island
+        option(value='co' data-code='57' data-country='Colombia') Colombia
+        option(value='km' data-code='269' data-country='Comoros') Comoros
+        option(value='cd' data-code='180' data-country='Congo') Congo
+        option(value='ck' data-code='682' data-country='Cook Islands') Cook Islands
+        option(value='cr' data-code='506' data-country='Costa Rica') Costa Rica
+        option(value='ci' data-code='225' data-country='Cote D Ivoire') Cote D Ivoire
+        option(value='hr' data-code='385' data-country='Croatia') Croatia
+        option(value='cw' data-code='599' data-country='Curaçao') Cura&ccedil;ao
+        option(value='cy' data-code='357' data-country='Cyprus') Cyprus
+        option(value='cz' data-code='420' data-country='Czech Republic') Czech Republic
+        option(value='dk' data-code='45' data-country='Denmark') Denmark
+        option(value='dj' data-code='253' data-country='Djibouti') Djibouti
+        option(value='dm' data-code='1767' data-country='Dominica') Dominica
+        option(value='do' data-code='1' data-country='Dominican Republic') Dominican Republic
+        option(value='ec' data-code='593' data-country='Ecuador') Ecuador
+        option(value='eg' data-code='20' data-country='Egypt') Egypt
+        option(value='sv' data-code='503' data-country='El Salvador') El Salvador
+        option(value='gq' data-code='240' data-country='Equatorial Guinea') Equatorial Guinea
+        option(value='er' data-code='291' data-country='Eritrea') Eritrea
+        option(value='ee' data-code='372' data-country='Estonia') Estonia
+        option(value='et' data-code='251' data-country='Ethiopia') Ethiopia
+        option(value='fo' data-code='298' data-country='Faroe Islands') Faroe Islands
+        option(value='fj' data-code='679' data-country='Fiji') Fiji
+        option(value='fi' data-code='358' data-country='Finland') Finland
+        option(value='fr' data-code='33' data-country='France') France
+        option(value='gf' data-code='594' data-country='French Guiana') French Guiana
+        option(value='pf' data-code='689' data-country='French Polynesia') French Polynesia
+        option(value='ga' data-code='241' data-country='Gabon') Gabon
+        option(value='gm' data-code='220' data-country='Gambia') Gambia
+        option(value='ge' data-code='995' data-country='Georgia') Georgia
+        option(value='de' data-code='49' data-country='Germany') Germany
+        option(value='gh' data-code='233' data-country='Ghana') Ghana
+        option(value='gi' data-code='350' data-country='Gibraltar') Gibraltar
+        option(value='gr' data-code='30' data-country='Greece') Greece
+        option(value='gl' data-code='299' data-country='Greenland') Greenland
+        option(value='gd' data-code='1473' data-country='Grenada') Grenada
+        option(value='gp' data-code='590' data-country='Guadeloupe') Guadeloupe
+        option(value='gu' data-code='1671' data-country='Guam') Guam
+        option(value='gt' data-code='502' data-country='Guatemala') Guatemala
+        option(value='gg' data-code='44' data-country='Guernsey') Guernsey
+        option(value='gn' data-code='224' data-country='Guinea') Guinea
+        option(value='gw' data-code='245' data-country='Guinea-Bissau') Guinea-Bissau
+        option(value='gy' data-code='592' data-country='Guyana') Guyana
+        option(value='ht' data-code='509' data-country='Haiti') Haiti
+        option(value='hm' data-code='0' data-country='Heard Island') Heard Island
+        option(value='va' data-code='379' data-country='Holy See') Holy See
+        option(value='hn' data-code='504' data-country='Honduras') Honduras
+        option(value='hk' data-code='852' data-country='Hong Kong') Hong Kong
+        option(value='hu' data-code='36' data-country='Hungary') Hungary
+        option(value='is' data-code='354' data-country='Iceland') Iceland
+        option(value='in' data-code='91' data-country='India') India
+        option(value='id' data-code='62' data-country='Indonesia') Indonesia
+        option(value='iq' data-code='964' data-country='Iraq') Iraq
+        option(value='ie' data-code='353' data-country='Ireland') Ireland
+        option(value='im' data-code='44' data-country='Isle of Man') Isle of Man
+        option(value='il' data-code='972' data-country='Israel') Israel
+        option(value='it' data-code='39' data-country='Italy') Italy
+        option(value='jm' data-code='1876' data-country='Jamaica') Jamaica
+        option(value='jp' data-code='81' data-country='Japan') Japan
+        option(value='je' data-code='44' data-country='Jersey') Jersey
+        option(value='jo' data-code='962' data-country='Jordan') Jordan
+        option(value='kz' data-code='7' data-country='Kazakhstan') Kazakhstan
+        option(value='ke' data-code='254' data-country='Kenya') Kenya
+        option(value='ki' data-code='686' data-country='Kiribati') Kiribati
+        option(value='kr' data-code='82' data-country='Korea (Republic of)') Korea (Republic of)
+        option(value='kw' data-code='965' data-country='Kuwait') Kuwait
+        option(value='kg' data-code='996' data-country='Kyrgyzstan') Kyrgyzstan
+        option(value='la' data-code='856' data-country='Lao') Lao
+        option(value='lv' data-code='371' data-country='Latvia') Latvia
+        option(value='lb' data-code='961' data-country='Lebanon') Lebanon
+        option(value='ls' data-code='266' data-country='Lesotho') Lesotho
+        option(value='lr' data-code='231' data-country='Liberia') Liberia
+        option(value='ly' data-code='218' data-country='Libya') Libya
+        option(value='li' data-code='423' data-country='Liechtenstein') Liechtenstein
+        option(value='lt' data-code='370' data-country='Lithuania') Lithuania
+        option(value='lu' data-code='352' data-country='Luxembourg') Luxembourg
+        option(value='mo' data-code='853' data-country='Macao') Macao
+        option(value='mk' data-code='389' data-country='Macedonia') Macedonia
+        option(value='mg' data-code='261' data-country='Madagascar') Madagascar
+        option(value='mw' data-code='265' data-country='Malawi') Malawi
+        option(value='my' data-code='60' data-country='Malaysia') Malaysia
+        option(value='mv' data-code='960' data-country='Maldives') Maldives
+        option(value='ml' data-code='223' data-country='Mali') Mali
+        option(value='mt' data-code='356' data-country='Malta') Malta
+        option(value='mh' data-code='692' data-country='Marshall Islands') Marshall Islands
+        option(value='mq' data-code='596' data-country='Martinique') Martinique
+        option(value='mr' data-code='222' data-country='Mauritania') Mauritania
+        option(value='mu' data-code='230' data-country='Mauritius') Mauritius
+        option(value='yt' data-code='262' data-country='Mayotte') Mayotte
+        option(value='mx' data-code='52' data-country='Mexico') Mexico
+        option(value='fm' data-code='691' data-country='Micronesia') Micronesia
+        option(value='md' data-code='373' data-country='Moldova') Moldova
+        option(value='mc' data-code='377' data-country='Monaco') Monaco
+        option(value='mn' data-code='976' data-country='Mongolia') Mongolia
+        option(value='me' data-code='382' data-country='Montenegro') Montenegro
+        option(value='ms' data-code='1664' data-country='Montserrat') Montserrat
+        option(value='ma' data-code='212' data-country='Morocco') Morocco
+        option(value='mz' data-code='258' data-country='Mozambique') Mozambique
+        option(value='mm' data-code='95' data-country='Myanmar') Myanmar
+        option(value='na' data-code='264' data-country='Namibia') Namibia
+        option(value='nr' data-code='674' data-country='Nauru') Nauru
+        option(value='np' data-code='977' data-country='Nepal') Nepal
+        option(value='nl' data-code='31' data-country='Netherlands') Netherlands
+        option(value='nc' data-code='687' data-country='New Caledonia') New Caledonia
+        option(value='nz' data-code='64' data-country='New Zealand') New Zealand
+        option(value='ni' data-code='505' data-country='Nicaragua') Nicaragua
+        option(value='ne' data-code='227' data-country='Niger') Niger
+        option(value='ng' data-code='234' data-country='Nigeria') Nigeria
+        option(value='nu' data-code='683' data-country='Niue') Niue
+        option(value='nf' data-code='672' data-country='Norfolk Island') Norfolk Island
+        option(value='no' data-code='47' data-country='Norway') Norway
+        option(value='om' data-code='968' data-country='Oman') Oman
+        option(value='pk' data-code='92' data-country='Pakistan') Pakistan
+        option(value='pw' data-code='680' data-country='Palau') Palau
+        option(value='ps' data-code='970' data-country='Palestine') Palestine
+        option(value='pa' data-code='507' data-country='Panama') Panama
+        option(value='pg' data-code='675' data-country='Papua New Guinea') Papua New Guinea
+        option(value='py' data-code='595' data-country='Paraguay') Paraguay
+        option(value='pe' data-code='51' data-country='Peru') Peru
+        option(value='ph' data-code='63' data-country='Philippines') Philippines
+        option(value='pn' data-code='null' data-country='Pitcairn') Pitcairn
+        option(value='pl' data-code='48' data-country='Poland') Poland
+        option(value='pt' data-code='351' data-country='Portugal') Portugal
+        option(value='pr' data-code='1' data-country='Puerto Rico') Puerto Rico
+        option(value='qa' data-code='974' data-country='Qatar') Qatar
+        option(value='re' data-code='262' data-country='Réunion') R&eacute;union
+        option(value='ro' data-code='40' data-country='Romania') Romania
+        option(value='ru' data-code='7' data-country='Russia') Russia
+        option(value='rw' data-code='250' data-country='Rwanda') Rwanda
+        option(value='bl' data-code='590' data-country='Saint Barthélemy') Saint Barth&eacute;lemy
+        option(value='lc' data-code='1758' data-country='Saint Lucia') Saint Lucia
+        option(value='ws' data-code='685' data-country='Samoa') Samoa
+        option(value='sm' data-code='378' data-country='San Marino') San Marino
+        option(value='sa' data-code='966' data-country='Saudi Arabia') Saudi Arabia
+        option(value='sn' data-code='221' data-country='Senegal') Senegal
+        option(value='rs' data-code='381' data-country='Serbia') Serbia
+        option(value='sc' data-code='248' data-country='Seychelles') Seychelles
+        option(value='sl' data-code='232' data-country='Sierra Leone') Sierra Leone
+        option(value='sg' data-code='65' data-country='Singapore') Singapore
+        option(value='sk' data-code='421' data-country='Slovakia') Slovakia
+        option(value='si' data-code='386' data-country='Slovenia') Slovenia
+        option(value='sb' data-code='677' data-country='Solomon Islands') Solomon Islands
+        option(value='so' data-code='252' data-country='Somalia') Somalia
+        option(value='za' data-code='27' data-country='South Africa') South Africa
+        option(value='ss' data-code='211' data-country='South Sudan') South Sudan
+        option(value='es' data-code='34' data-country='Spain') Spain
+        option(value='lk' data-code='94' data-country='Sri Lanka') Sri Lanka
+        option(value='sr' data-code='597' data-country='Suriname') Suriname
+        option(value='sz' data-code='268' data-country='Swaziland') Swaziland
+        option(value='se' data-code='46' data-country='Sweden') Sweden
+        option(value='ch' data-code='41' data-country='Switzerland') Switzerland
+        option(value='tw' data-code='886' data-country='Taiwan') Taiwan
+        option(value='tj' data-code='992' data-country='Tajikistan') Tajikistan
+        option(value='tz' data-code='255' data-country='Tanzania') Tanzania
+        option(value='th' data-code='66' data-country='Thailand') Thailand
+        option(value='tl' data-code='670' data-country='Timor-Leste') Timor-Leste
+        option(value='tg' data-code='228' data-country='Togo') Togo
+        option(value='tk' data-code='690' data-country='Tokelau') Tokelau
+        option(value='to' data-code='676' data-country='Tonga') Tonga
+        option(value='tt' data-code='1868' data-country='Trinidad and Tobago') Trinidad and Tobago
+        option(value='tn' data-code='216' data-country='Tunisia') Tunisia
+        option(value='tr' data-code='90' data-country='Turkey') Turkey
+        option(value='tm' data-code='993' data-country='Turkmenistan') Turkmenistan
+        option(value='tv' data-code='688' data-country='Tuvalu') Tuvalu
+        option(value='ug' data-code='256' data-country='Uganda') Uganda
+        option(value='ua' data-code='380' data-country='Ukraine') Ukraine
+        option(value='ae' data-code='971' data-country='United Arab Emirates') United Arab Emirates
+        option(value='gb' data-code='44' data-country='United Kingdom') United Kingdom
+        option(value='uy' data-code='598' data-country='Uruguay') Uruguay
+        option(value='uz' data-code='998' data-country='Uzbekistan') Uzbekistan
+        option(value='vu' data-code='678' data-country='Vanuatu') Vanuatu
+        option(value='ve' data-code='58' data-country='Venezuela') Venezuela
+        option(value='vn' data-code='84' data-country='Viet Nam') Viet Nam
+        option(value='eh' data-code='212' data-country='Western Sahara') Western Sahara
+        option(value='ye' data-code='967' data-country='Yemen') Yemen
+        option(value='zm' data-code='260' data-country='Zambia') Zambia
+        option(value='zw' data-code='263' data-country='Zimbabwe') Zimbabwe
+    label.form-input
+      input(type='email' name='email' placeholder='Enter your E-mail')
+    label.form-input
+      span.form-input-password-wrapper
+        input(type='password' name='password' placeholder='Password')
+    .form-input
+      span.form-input-phone
+        input(type='text' name='phone-code' placeholder='Code' readonly='')
+        .intl-tel-input.allow-dropdown
+          .flag-container
+            .selected-flag(role='combobox' aria-owns='country-listbox' tabindex='0' title='United States: +1')
+              .iti-flag.us
+              .iti-arrow
+            ul#country-listbox.country-list.hide(aria-expanded='false' role='listbox' aria-activedescendant='iti-item-us')
+              li#iti-item-us.country.preferred.active(tabindex='-1' role='option' data-dial-code='1' data-country-code='us' aria-selected='true')
+                .flag-box
+                  .iti-flag.us
+                span.country-name United States
+                span.dial-code +1
+              li#iti-item-gb.country.preferred(tabindex='-1' role='option' data-dial-code='44' data-country-code='gb')
+                .flag-box
+                  .iti-flag.gb
+                span.country-name United Kingdom
+                span.dial-code +44
+              li.divider(role='separator' aria-disabled='true')
+              li#iti-item-af.country.standard(tabindex='-1' role='option' data-dial-code='93' data-country-code='af')
+                .flag-box
+                  .iti-flag.af
+                span.country-name Afghanistan (&#x202B;&#x627;&#x641;&#x63A;&#x627;&#x646;&#x633;&#x62A;&#x627;&#x646;&#x202C;&lrm;)
+                span.dial-code +93
+              li#iti-item-al.country.standard(tabindex='-1' role='option' data-dial-code='355' data-country-code='al')
+                .flag-box
+                  .iti-flag.al
+                span.country-name Albania (Shqip&euml;ri)
+                span.dial-code +355
+              li#iti-item-dz.country.standard(tabindex='-1' role='option' data-dial-code='213' data-country-code='dz')
+                .flag-box
+                  .iti-flag.dz
+                span.country-name Algeria (&#x202B;&#x627;&#x644;&#x62C;&#x632;&#x627;&#x626;&#x631;&#x202C;&lrm;)
+                span.dial-code +213
+              li#iti-item-as.country.standard(tabindex='-1' role='option' data-dial-code='1684' data-country-code='as')
+                .flag-box
+                  .iti-flag.as
+                span.country-name American Samoa
+                span.dial-code +1684
+              li#iti-item-ad.country.standard(tabindex='-1' role='option' data-dial-code='376' data-country-code='ad')
+                .flag-box
+                  .iti-flag.ad
+                span.country-name Andorra
+                span.dial-code +376
+              li#iti-item-ao.country.standard(tabindex='-1' role='option' data-dial-code='244' data-country-code='ao')
+                .flag-box
+                  .iti-flag.ao
+                span.country-name Angola
+                span.dial-code +244
+              li#iti-item-ai.country.standard(tabindex='-1' role='option' data-dial-code='1264' data-country-code='ai')
+                .flag-box
+                  .iti-flag.ai
+                span.country-name Anguilla
+                span.dial-code +1264
+              li#iti-item-ag.country.standard(tabindex='-1' role='option' data-dial-code='1268' data-country-code='ag')
+                .flag-box
+                  .iti-flag.ag
+                span.country-name Antigua and Barbuda
+                span.dial-code +1268
+              li#iti-item-ar.country.standard(tabindex='-1' role='option' data-dial-code='54' data-country-code='ar')
+                .flag-box
+                  .iti-flag.ar
+                span.country-name Argentina
+                span.dial-code +54
+              li#iti-item-am.country.standard(tabindex='-1' role='option' data-dial-code='374' data-country-code='am')
+                .flag-box
+                  .iti-flag.am
+                span.country-name Armenia (&#x540;&#x561;&#x575;&#x561;&#x57D;&#x57F;&#x561;&#x576;)
+                span.dial-code +374
+              li#iti-item-aw.country.standard(tabindex='-1' role='option' data-dial-code='297' data-country-code='aw')
+                .flag-box
+                  .iti-flag.aw
+                span.country-name Aruba
+                span.dial-code +297
+              li#iti-item-au.country.standard(tabindex='-1' role='option' data-dial-code='61' data-country-code='au')
+                .flag-box
+                  .iti-flag.au
+                span.country-name Australia
+                span.dial-code +61
+              li#iti-item-at.country.standard(tabindex='-1' role='option' data-dial-code='43' data-country-code='at')
+                .flag-box
+                  .iti-flag.at
+                span.country-name Austria (&Ouml;sterreich)
+                span.dial-code +43
+              li#iti-item-az.country.standard(tabindex='-1' role='option' data-dial-code='994' data-country-code='az')
+                .flag-box
+                  .iti-flag.az
+                span.country-name Azerbaijan (Az&#x259;rbaycan)
+                span.dial-code +994
+              li#iti-item-bs.country.standard(tabindex='-1' role='option' data-dial-code='1242' data-country-code='bs')
+                .flag-box
+                  .iti-flag.bs
+                span.country-name Bahamas
+                span.dial-code +1242
+              li#iti-item-bh.country.standard(tabindex='-1' role='option' data-dial-code='973' data-country-code='bh')
+                .flag-box
+                  .iti-flag.bh
+                span.country-name Bahrain (&#x202B;&#x627;&#x644;&#x628;&#x62D;&#x631;&#x64A;&#x646;&#x202C;&lrm;)
+                span.dial-code +973
+              li#iti-item-bd.country.standard(tabindex='-1' role='option' data-dial-code='880' data-country-code='bd')
+                .flag-box
+                  .iti-flag.bd
+                span.country-name Bangladesh (&#x9AC;&#x9BE;&#x982;&#x9B2;&#x9BE;&#x9A6;&#x9C7;&#x9B6;)
+                span.dial-code +880
+              li#iti-item-bb.country.standard(tabindex='-1' role='option' data-dial-code='1246' data-country-code='bb')
+                .flag-box
+                  .iti-flag.bb
+                span.country-name Barbados
+                span.dial-code +1246
+              li#iti-item-by.country.standard(tabindex='-1' role='option' data-dial-code='375' data-country-code='by')
+                .flag-box
+                  .iti-flag.by
+                span.country-name Belarus (&Bcy;&iecy;&lcy;&acy;&rcy;&ucy;&scy;&softcy;)
+                span.dial-code +375
+              li#iti-item-be.country.standard(tabindex='-1' role='option' data-dial-code='32' data-country-code='be')
+                .flag-box
+                  .iti-flag.be
+                span.country-name Belgium (Belgi&euml;)
+                span.dial-code +32
+              li#iti-item-bz.country.standard(tabindex='-1' role='option' data-dial-code='501' data-country-code='bz')
+                .flag-box
+                  .iti-flag.bz
+                span.country-name Belize
+                span.dial-code +501
+              li#iti-item-bj.country.standard(tabindex='-1' role='option' data-dial-code='229' data-country-code='bj')
+                .flag-box
+                  .iti-flag.bj
+                span.country-name Benin (B&eacute;nin)
+                span.dial-code +229
+              li#iti-item-bm.country.standard(tabindex='-1' role='option' data-dial-code='1441' data-country-code='bm')
+                .flag-box
+                  .iti-flag.bm
+                span.country-name Bermuda
+                span.dial-code +1441
+              li#iti-item-bt.country.standard(tabindex='-1' role='option' data-dial-code='975' data-country-code='bt')
+                .flag-box
+                  .iti-flag.bt
+                span.country-name Bhutan (&#xF60;&#xF56;&#xFB2;&#xF74;&#xF42;)
+                span.dial-code +975
+              li#iti-item-bo.country.standard(tabindex='-1' role='option' data-dial-code='591' data-country-code='bo')
+                .flag-box
+                  .iti-flag.bo
+                span.country-name Bolivia
+                span.dial-code +591
+              li#iti-item-ba.country.standard(tabindex='-1' role='option' data-dial-code='387' data-country-code='ba')
+                .flag-box
+                  .iti-flag.ba
+                span.country-name Bosnia and Herzegovina (&Bcy;&ocy;&scy;&ncy;&acy; &icy; &KHcy;&iecy;&rcy;&tscy;&iecy;&gcy;&ocy;&vcy;&icy;&ncy;&acy;)
+                span.dial-code +387
+              li#iti-item-bw.country.standard(tabindex='-1' role='option' data-dial-code='267' data-country-code='bw')
+                .flag-box
+                  .iti-flag.bw
+                span.country-name Botswana
+                span.dial-code +267
+              li#iti-item-br.country.standard(tabindex='-1' role='option' data-dial-code='55' data-country-code='br')
+                .flag-box
+                  .iti-flag.br
+                span.country-name Brazil (Brasil)
+                span.dial-code +55
+              li#iti-item-io.country.standard(tabindex='-1' role='option' data-dial-code='246' data-country-code='io')
+                .flag-box
+                  .iti-flag.io
+                span.country-name British Indian Ocean Territory
+                span.dial-code +246
+              li#iti-item-vg.country.standard(tabindex='-1' role='option' data-dial-code='1284' data-country-code='vg')
+                .flag-box
+                  .iti-flag.vg
+                span.country-name British Virgin Islands
+                span.dial-code +1284
+              li#iti-item-bn.country.standard(tabindex='-1' role='option' data-dial-code='673' data-country-code='bn')
+                .flag-box
+                  .iti-flag.bn
+                span.country-name Brunei
+                span.dial-code +673
+              li#iti-item-bg.country.standard(tabindex='-1' role='option' data-dial-code='359' data-country-code='bg')
+                .flag-box
+                  .iti-flag.bg
+                span.country-name Bulgaria (&Bcy;&hardcy;&lcy;&gcy;&acy;&rcy;&icy;&yacy;)
+                span.dial-code +359
+              li#iti-item-bf.country.standard(tabindex='-1' role='option' data-dial-code='226' data-country-code='bf')
+                .flag-box
+                  .iti-flag.bf
+                span.country-name Burkina Faso
+                span.dial-code +226
+              li#iti-item-bi.country.standard(tabindex='-1' role='option' data-dial-code='257' data-country-code='bi')
+                .flag-box
+                  .iti-flag.bi
+                span.country-name Burundi (Uburundi)
+                span.dial-code +257
+              li#iti-item-kh.country.standard(tabindex='-1' role='option' data-dial-code='855' data-country-code='kh')
+                .flag-box
+                  .iti-flag.kh
+                span.country-name Cambodia (&#x1780;&#x1798;&#x17D2;&#x1796;&#x17BB;&#x1787;&#x17B6;)
+                span.dial-code +855
+              li#iti-item-cm.country.standard(tabindex='-1' role='option' data-dial-code='237' data-country-code='cm')
+                .flag-box
+                  .iti-flag.cm
+                span.country-name Cameroon (Cameroun)
+                span.dial-code +237
+              li#iti-item-ca.country.standard(tabindex='-1' role='option' data-dial-code='1' data-country-code='ca')
+                .flag-box
+                  .iti-flag.ca
+                span.country-name Canada
+                span.dial-code +1
+              li#iti-item-cv.country.standard(tabindex='-1' role='option' data-dial-code='238' data-country-code='cv')
+                .flag-box
+                  .iti-flag.cv
+                span.country-name Cape Verde (Kabu Verdi)
+                span.dial-code +238
+              li#iti-item-bq.country.standard(tabindex='-1' role='option' data-dial-code='599' data-country-code='bq')
+                .flag-box
+                  .iti-flag.bq
+                span.country-name Caribbean Netherlands
+                span.dial-code +599
+              li#iti-item-ky.country.standard(tabindex='-1' role='option' data-dial-code='1345' data-country-code='ky')
+                .flag-box
+                  .iti-flag.ky
+                span.country-name Cayman Islands
+                span.dial-code +1345
+              li#iti-item-cf.country.standard(tabindex='-1' role='option' data-dial-code='236' data-country-code='cf')
+                .flag-box
+                  .iti-flag.cf
+                span.country-name Central African Republic (R&eacute;publique centrafricaine)
+                span.dial-code +236
+              li#iti-item-td.country.standard(tabindex='-1' role='option' data-dial-code='235' data-country-code='td')
+                .flag-box
+                  .iti-flag.td
+                span.country-name Chad (Tchad)
+                span.dial-code +235
+              li#iti-item-cl.country.standard(tabindex='-1' role='option' data-dial-code='56' data-country-code='cl')
+                .flag-box
+                  .iti-flag.cl
+                span.country-name Chile
+                span.dial-code +56
+              li#iti-item-cn.country.standard(tabindex='-1' role='option' data-dial-code='86' data-country-code='cn')
+                .flag-box
+                  .iti-flag.cn
+                span.country-name China (&#x4E2D;&#x56FD;)
+                span.dial-code +86
+              li#iti-item-cx.country.standard(tabindex='-1' role='option' data-dial-code='61' data-country-code='cx')
+                .flag-box
+                  .iti-flag.cx
+                span.country-name Christmas Island
+                span.dial-code +61
+              li#iti-item-cc.country.standard(tabindex='-1' role='option' data-dial-code='61' data-country-code='cc')
+                .flag-box
+                  .iti-flag.cc
+                span.country-name Cocos (Keeling) Islands
+                span.dial-code +61
+              li#iti-item-co.country.standard(tabindex='-1' role='option' data-dial-code='57' data-country-code='co')
+                .flag-box
+                  .iti-flag.co
+                span.country-name Colombia
+                span.dial-code +57
+              li#iti-item-km.country.standard(tabindex='-1' role='option' data-dial-code='269' data-country-code='km')
+                .flag-box
+                  .iti-flag.km
+                span.country-name Comoros (&#x202B;&#x62C;&#x632;&#x631; &#x627;&#x644;&#x642;&#x645;&#x631;&#x202C;&lrm;)
+                span.dial-code +269
+              li#iti-item-cd.country.standard(tabindex='-1' role='option' data-dial-code='243' data-country-code='cd')
+                .flag-box
+                  .iti-flag.cd
+                span.country-name Congo (DRC) (Jamhuri ya Kidemokrasia ya Kongo)
+                span.dial-code +243
+              li#iti-item-cg.country.standard(tabindex='-1' role='option' data-dial-code='242' data-country-code='cg')
+                .flag-box
+                  .iti-flag.cg
+                span.country-name Congo (Republic) (Congo-Brazzaville)
+                span.dial-code +242
+              li#iti-item-ck.country.standard(tabindex='-1' role='option' data-dial-code='682' data-country-code='ck')
+                .flag-box
+                  .iti-flag.ck
+                span.country-name Cook Islands
+                span.dial-code +682
+              li#iti-item-cr.country.standard(tabindex='-1' role='option' data-dial-code='506' data-country-code='cr')
+                .flag-box
+                  .iti-flag.cr
+                span.country-name Costa Rica
+                span.dial-code +506
+              li#iti-item-ci.country.standard(tabindex='-1' role='option' data-dial-code='225' data-country-code='ci')
+                .flag-box
+                  .iti-flag.ci
+                span.country-name C&ocirc;te d&rsquo;Ivoire
+                span.dial-code +225
+              li#iti-item-hr.country.standard(tabindex='-1' role='option' data-dial-code='385' data-country-code='hr')
+                .flag-box
+                  .iti-flag.hr
+                span.country-name Croatia (Hrvatska)
+                span.dial-code +385
+              li#iti-item-cu.country.standard(tabindex='-1' role='option' data-dial-code='53' data-country-code='cu')
+                .flag-box
+                  .iti-flag.cu
+                span.country-name Cuba
+                span.dial-code +53
+              li#iti-item-cw.country.standard(tabindex='-1' role='option' data-dial-code='599' data-country-code='cw')
+                .flag-box
+                  .iti-flag.cw
+                span.country-name Cura&ccedil;ao
+                span.dial-code +599
+              li#iti-item-cy.country.standard(tabindex='-1' role='option' data-dial-code='357' data-country-code='cy')
+                .flag-box
+                  .iti-flag.cy
+                span.country-name Cyprus (&Kappa;&#x3CD;&pi;&rho;&omicron;&sigmaf;)
+                span.dial-code +357
+              li#iti-item-cz.country.standard(tabindex='-1' role='option' data-dial-code='420' data-country-code='cz')
+                .flag-box
+                  .iti-flag.cz
+                span.country-name Czech Republic (&Ccaron;esk&aacute; republika)
+                span.dial-code +420
+              li#iti-item-dk.country.standard(tabindex='-1' role='option' data-dial-code='45' data-country-code='dk')
+                .flag-box
+                  .iti-flag.dk
+                span.country-name Denmark (Danmark)
+                span.dial-code +45
+              li#iti-item-dj.country.standard(tabindex='-1' role='option' data-dial-code='253' data-country-code='dj')
+                .flag-box
+                  .iti-flag.dj
+                span.country-name Djibouti
+                span.dial-code +253
+              li#iti-item-dm.country.standard(tabindex='-1' role='option' data-dial-code='1767' data-country-code='dm')
+                .flag-box
+                  .iti-flag.dm
+                span.country-name Dominica
+                span.dial-code +1767
+              li#iti-item-do.country.standard(tabindex='-1' role='option' data-dial-code='1' data-country-code='do')
+                .flag-box
+                  .iti-flag.do
+                span.country-name Dominican Republic (Rep&uacute;blica Dominicana)
+                span.dial-code +1
+              li#iti-item-ec.country.standard(tabindex='-1' role='option' data-dial-code='593' data-country-code='ec')
+                .flag-box
+                  .iti-flag.ec
+                span.country-name Ecuador
+                span.dial-code +593
+              li#iti-item-eg.country.standard(tabindex='-1' role='option' data-dial-code='20' data-country-code='eg')
+                .flag-box
+                  .iti-flag.eg
+                span.country-name Egypt (&#x202B;&#x645;&#x635;&#x631;&#x202C;&lrm;)
+                span.dial-code +20
+              li#iti-item-sv.country.standard(tabindex='-1' role='option' data-dial-code='503' data-country-code='sv')
+                .flag-box
+                  .iti-flag.sv
+                span.country-name El Salvador
+                span.dial-code +503
+              li#iti-item-gq.country.standard(tabindex='-1' role='option' data-dial-code='240' data-country-code='gq')
+                .flag-box
+                  .iti-flag.gq
+                span.country-name Equatorial Guinea (Guinea Ecuatorial)
+                span.dial-code +240
+              li#iti-item-er.country.standard(tabindex='-1' role='option' data-dial-code='291' data-country-code='er')
+                .flag-box
+                  .iti-flag.er
+                span.country-name Eritrea
+                span.dial-code +291
+              li#iti-item-ee.country.standard(tabindex='-1' role='option' data-dial-code='372' data-country-code='ee')
+                .flag-box
+                  .iti-flag.ee
+                span.country-name Estonia (Eesti)
+                span.dial-code +372
+              li#iti-item-et.country.standard(tabindex='-1' role='option' data-dial-code='251' data-country-code='et')
+                .flag-box
+                  .iti-flag.et
+                span.country-name Ethiopia
+                span.dial-code +251
+              li#iti-item-fk.country.standard(tabindex='-1' role='option' data-dial-code='500' data-country-code='fk')
+                .flag-box
+                  .iti-flag.fk
+                span.country-name Falkland Islands (Islas Malvinas)
+                span.dial-code +500
+              li#iti-item-fo.country.standard(tabindex='-1' role='option' data-dial-code='298' data-country-code='fo')
+                .flag-box
+                  .iti-flag.fo
+                span.country-name Faroe Islands (F&oslash;royar)
+                span.dial-code +298
+              li#iti-item-fj.country.standard(tabindex='-1' role='option' data-dial-code='679' data-country-code='fj')
+                .flag-box
+                  .iti-flag.fj
+                span.country-name Fiji
+                span.dial-code +679
+              li#iti-item-fi.country.standard(tabindex='-1' role='option' data-dial-code='358' data-country-code='fi')
+                .flag-box
+                  .iti-flag.fi
+                span.country-name Finland (Suomi)
+                span.dial-code +358
+              li#iti-item-fr.country.standard(tabindex='-1' role='option' data-dial-code='33' data-country-code='fr')
+                .flag-box
+                  .iti-flag.fr
+                span.country-name France
+                span.dial-code +33
+              li#iti-item-gf.country.standard(tabindex='-1' role='option' data-dial-code='594' data-country-code='gf')
+                .flag-box
+                  .iti-flag.gf
+                span.country-name French Guiana (Guyane fran&ccedil;aise)
+                span.dial-code +594
+              li#iti-item-pf.country.standard(tabindex='-1' role='option' data-dial-code='689' data-country-code='pf')
+                .flag-box
+                  .iti-flag.pf
+                span.country-name French Polynesia (Polyn&eacute;sie fran&ccedil;aise)
+                span.dial-code +689
+              li#iti-item-ga.country.standard(tabindex='-1' role='option' data-dial-code='241' data-country-code='ga')
+                .flag-box
+                  .iti-flag.ga
+                span.country-name Gabon
+                span.dial-code +241
+              li#iti-item-gm.country.standard(tabindex='-1' role='option' data-dial-code='220' data-country-code='gm')
+                .flag-box
+                  .iti-flag.gm
+                span.country-name Gambia
+                span.dial-code +220
+              li#iti-item-ge.country.standard(tabindex='-1' role='option' data-dial-code='995' data-country-code='ge')
+                .flag-box
+                  .iti-flag.ge
+                span.country-name Georgia (&#x10E1;&#x10D0;&#x10E5;&#x10D0;&#x10E0;&#x10D7;&#x10D5;&#x10D4;&#x10DA;&#x10DD;)
+                span.dial-code +995
+              li#iti-item-de.country.standard(tabindex='-1' role='option' data-dial-code='49' data-country-code='de')
+                .flag-box
+                  .iti-flag.de
+                span.country-name Germany (Deutschland)
+                span.dial-code +49
+              li#iti-item-gh.country.standard(tabindex='-1' role='option' data-dial-code='233' data-country-code='gh')
+                .flag-box
+                  .iti-flag.gh
+                span.country-name Ghana (Gaana)
+                span.dial-code +233
+              li#iti-item-gi.country.standard(tabindex='-1' role='option' data-dial-code='350' data-country-code='gi')
+                .flag-box
+                  .iti-flag.gi
+                span.country-name Gibraltar
+                span.dial-code +350
+              li#iti-item-gr.country.standard(tabindex='-1' role='option' data-dial-code='30' data-country-code='gr')
+                .flag-box
+                  .iti-flag.gr
+                span.country-name Greece (&Epsilon;&lambda;&lambda;&#x3AC;&delta;&alpha;)
+                span.dial-code +30
+              li#iti-item-gl.country.standard(tabindex='-1' role='option' data-dial-code='299' data-country-code='gl')
+                .flag-box
+                  .iti-flag.gl
+                span.country-name Greenland (Kalaallit Nunaat)
+                span.dial-code +299
+              li#iti-item-gd.country.standard(tabindex='-1' role='option' data-dial-code='1473' data-country-code='gd')
+                .flag-box
+                  .iti-flag.gd
+                span.country-name Grenada
+                span.dial-code +1473
+              li#iti-item-gp.country.standard(tabindex='-1' role='option' data-dial-code='590' data-country-code='gp')
+                .flag-box
+                  .iti-flag.gp
+                span.country-name Guadeloupe
+                span.dial-code +590
+              li#iti-item-gu.country.standard(tabindex='-1' role='option' data-dial-code='1671' data-country-code='gu')
+                .flag-box
+                  .iti-flag.gu
+                span.country-name Guam
+                span.dial-code +1671
+              li#iti-item-gt.country.standard(tabindex='-1' role='option' data-dial-code='502' data-country-code='gt')
+                .flag-box
+                  .iti-flag.gt
+                span.country-name Guatemala
+                span.dial-code +502
+              li#iti-item-gg.country.standard(tabindex='-1' role='option' data-dial-code='44' data-country-code='gg')
+                .flag-box
+                  .iti-flag.gg
+                span.country-name Guernsey
+                span.dial-code +44
+              li#iti-item-gn.country.standard(tabindex='-1' role='option' data-dial-code='224' data-country-code='gn')
+                .flag-box
+                  .iti-flag.gn
+                span.country-name Guinea (Guin&eacute;e)
+                span.dial-code +224
+              li#iti-item-gw.country.standard(tabindex='-1' role='option' data-dial-code='245' data-country-code='gw')
+                .flag-box
+                  .iti-flag.gw
+                span.country-name Guinea-Bissau (Guin&eacute; Bissau)
+                span.dial-code +245
+              li#iti-item-gy.country.standard(tabindex='-1' role='option' data-dial-code='592' data-country-code='gy')
+                .flag-box
+                  .iti-flag.gy
+                span.country-name Guyana
+                span.dial-code +592
+              li#iti-item-ht.country.standard(tabindex='-1' role='option' data-dial-code='509' data-country-code='ht')
+                .flag-box
+                  .iti-flag.ht
+                span.country-name Haiti
+                span.dial-code +509
+              li#iti-item-hn.country.standard(tabindex='-1' role='option' data-dial-code='504' data-country-code='hn')
+                .flag-box
+                  .iti-flag.hn
+                span.country-name Honduras
+                span.dial-code +504
+              li#iti-item-hk.country.standard(tabindex='-1' role='option' data-dial-code='852' data-country-code='hk')
+                .flag-box
+                  .iti-flag.hk
+                span.country-name Hong Kong (&#x9999;&#x6E2F;)
+                span.dial-code +852
+              li#iti-item-hu.country.standard(tabindex='-1' role='option' data-dial-code='36' data-country-code='hu')
+                .flag-box
+                  .iti-flag.hu
+                span.country-name Hungary (Magyarorsz&aacute;g)
+                span.dial-code +36
+              li#iti-item-is.country.standard(tabindex='-1' role='option' data-dial-code='354' data-country-code='is')
+                .flag-box
+                  .iti-flag.is
+                span.country-name Iceland (&Iacute;sland)
+                span.dial-code +354
+              li#iti-item-in.country.standard(tabindex='-1' role='option' data-dial-code='91' data-country-code='in')
+                .flag-box
+                  .iti-flag.in
+                span.country-name India (&#x92D;&#x93E;&#x930;&#x924;)
+                span.dial-code +91
+              li#iti-item-id.country.standard(tabindex='-1' role='option' data-dial-code='62' data-country-code='id')
+                .flag-box
+                  .iti-flag.id
+                span.country-name Indonesia
+                span.dial-code +62
+              li#iti-item-ir.country.standard(tabindex='-1' role='option' data-dial-code='98' data-country-code='ir')
+                .flag-box
+                  .iti-flag.ir
+                span.country-name Iran (&#x202B;&#x627;&#x6CC;&#x631;&#x627;&#x646;&#x202C;&lrm;)
+                span.dial-code +98
+              li#iti-item-iq.country.standard(tabindex='-1' role='option' data-dial-code='964' data-country-code='iq')
+                .flag-box
+                  .iti-flag.iq
+                span.country-name Iraq (&#x202B;&#x627;&#x644;&#x639;&#x631;&#x627;&#x642;&#x202C;&lrm;)
+                span.dial-code +964
+              li#iti-item-ie.country.standard(tabindex='-1' role='option' data-dial-code='353' data-country-code='ie')
+                .flag-box
+                  .iti-flag.ie
+                span.country-name Ireland
+                span.dial-code +353
+              li#iti-item-im.country.standard(tabindex='-1' role='option' data-dial-code='44' data-country-code='im')
+                .flag-box
+                  .iti-flag.im
+                span.country-name Isle of Man
+                span.dial-code +44
+              li#iti-item-il.country.standard(tabindex='-1' role='option' data-dial-code='972' data-country-code='il')
+                .flag-box
+                  .iti-flag.il
+                span.country-name Israel (&#x202B;&#x5D9;&#x5E9;&#x5E8;&#x5D0;&#x5DC;&#x202C;&lrm;)
+                span.dial-code +972
+              li#iti-item-it.country.standard(tabindex='-1' role='option' data-dial-code='39' data-country-code='it')
+                .flag-box
+                  .iti-flag.it
+                span.country-name Italy (Italia)
+                span.dial-code +39
+              li#iti-item-jm.country.standard(tabindex='-1' role='option' data-dial-code='1' data-country-code='jm')
+                .flag-box
+                  .iti-flag.jm
+                span.country-name Jamaica
+                span.dial-code +1
+              li#iti-item-jp.country.standard(tabindex='-1' role='option' data-dial-code='81' data-country-code='jp')
+                .flag-box
+                  .iti-flag.jp
+                span.country-name Japan (&#x65E5;&#x672C;)
+                span.dial-code +81
+              li#iti-item-je.country.standard(tabindex='-1' role='option' data-dial-code='44' data-country-code='je')
+                .flag-box
+                  .iti-flag.je
+                span.country-name Jersey
+                span.dial-code +44
+              li#iti-item-jo.country.standard(tabindex='-1' role='option' data-dial-code='962' data-country-code='jo')
+                .flag-box
+                  .iti-flag.jo
+                span.country-name Jordan (&#x202B;&#x627;&#x644;&#x623;&#x631;&#x62F;&#x646;&#x202C;&lrm;)
+                span.dial-code +962
+              li#iti-item-kz.country.standard(tabindex='-1' role='option' data-dial-code='7' data-country-code='kz')
+                .flag-box
+                  .iti-flag.kz
+                span.country-name Kazakhstan (&Kcy;&acy;&zcy;&acy;&khcy;&scy;&tcy;&acy;&ncy;)
+                span.dial-code +7
+              li#iti-item-ke.country.standard(tabindex='-1' role='option' data-dial-code='254' data-country-code='ke')
+                .flag-box
+                  .iti-flag.ke
+                span.country-name Kenya
+                span.dial-code +254
+              li#iti-item-ki.country.standard(tabindex='-1' role='option' data-dial-code='686' data-country-code='ki')
+                .flag-box
+                  .iti-flag.ki
+                span.country-name Kiribati
+                span.dial-code +686
+              li#iti-item-xk.country.standard(tabindex='-1' role='option' data-dial-code='383' data-country-code='xk')
+                .flag-box
+                  .iti-flag.xk
+                span.country-name Kosovo
+                span.dial-code +383
+              li#iti-item-kw.country.standard(tabindex='-1' role='option' data-dial-code='965' data-country-code='kw')
+                .flag-box
+                  .iti-flag.kw
+                span.country-name Kuwait (&#x202B;&#x627;&#x644;&#x643;&#x648;&#x64A;&#x62A;&#x202C;&lrm;)
+                span.dial-code +965
+              li#iti-item-kg.country.standard(tabindex='-1' role='option' data-dial-code='996' data-country-code='kg')
+                .flag-box
+                  .iti-flag.kg
+                span.country-name Kyrgyzstan (&Kcy;&ycy;&rcy;&gcy;&ycy;&zcy;&scy;&tcy;&acy;&ncy;)
+                span.dial-code +996
+              li#iti-item-la.country.standard(tabindex='-1' role='option' data-dial-code='856' data-country-code='la')
+                .flag-box
+                  .iti-flag.la
+                span.country-name Laos (&#xEA5;&#xEB2;&#xEA7;)
+                span.dial-code +856
+              li#iti-item-lv.country.standard(tabindex='-1' role='option' data-dial-code='371' data-country-code='lv')
+                .flag-box
+                  .iti-flag.lv
+                span.country-name Latvia (Latvija)
+                span.dial-code +371
+              li#iti-item-lb.country.standard(tabindex='-1' role='option' data-dial-code='961' data-country-code='lb')
+                .flag-box
+                  .iti-flag.lb
+                span.country-name Lebanon (&#x202B;&#x644;&#x628;&#x646;&#x627;&#x646;&#x202C;&lrm;)
+                span.dial-code +961
+              li#iti-item-ls.country.standard(tabindex='-1' role='option' data-dial-code='266' data-country-code='ls')
+                .flag-box
+                  .iti-flag.ls
+                span.country-name Lesotho
+                span.dial-code +266
+              li#iti-item-lr.country.standard(tabindex='-1' role='option' data-dial-code='231' data-country-code='lr')
+                .flag-box
+                  .iti-flag.lr
+                span.country-name Liberia
+                span.dial-code +231
+              li#iti-item-ly.country.standard(tabindex='-1' role='option' data-dial-code='218' data-country-code='ly')
+                .flag-box
+                  .iti-flag.ly
+                span.country-name Libya (&#x202B;&#x644;&#x64A;&#x628;&#x64A;&#x627;&#x202C;&lrm;)
+                span.dial-code +218
+              li#iti-item-li.country.standard(tabindex='-1' role='option' data-dial-code='423' data-country-code='li')
+                .flag-box
+                  .iti-flag.li
+                span.country-name Liechtenstein
+                span.dial-code +423
+              li#iti-item-lt.country.standard(tabindex='-1' role='option' data-dial-code='370' data-country-code='lt')
+                .flag-box
+                  .iti-flag.lt
+                span.country-name Lithuania (Lietuva)
+                span.dial-code +370
+              li#iti-item-lu.country.standard(tabindex='-1' role='option' data-dial-code='352' data-country-code='lu')
+                .flag-box
+                  .iti-flag.lu
+                span.country-name Luxembourg
+                span.dial-code +352
+              li#iti-item-mo.country.standard(tabindex='-1' role='option' data-dial-code='853' data-country-code='mo')
+                .flag-box
+                  .iti-flag.mo
+                span.country-name Macau (&#x6FB3;&#x9580;)
+                span.dial-code +853
+              li#iti-item-mk.country.standard(tabindex='-1' role='option' data-dial-code='389' data-country-code='mk')
+                .flag-box
+                  .iti-flag.mk
+                span.country-name Macedonia (FYROM) (&Mcy;&acy;&kcy;&iecy;&dcy;&ocy;&ncy;&icy;&jsercy;&acy;)
+                span.dial-code +389
+              li#iti-item-mg.country.standard(tabindex='-1' role='option' data-dial-code='261' data-country-code='mg')
+                .flag-box
+                  .iti-flag.mg
+                span.country-name Madagascar (Madagasikara)
+                span.dial-code +261
+              li#iti-item-mw.country.standard(tabindex='-1' role='option' data-dial-code='265' data-country-code='mw')
+                .flag-box
+                  .iti-flag.mw
+                span.country-name Malawi
+                span.dial-code +265
+              li#iti-item-my.country.standard(tabindex='-1' role='option' data-dial-code='60' data-country-code='my')
+                .flag-box
+                  .iti-flag.my
+                span.country-name Malaysia
+                span.dial-code +60
+              li#iti-item-mv.country.standard(tabindex='-1' role='option' data-dial-code='960' data-country-code='mv')
+                .flag-box
+                  .iti-flag.mv
+                span.country-name Maldives
+                span.dial-code +960
+              li#iti-item-ml.country.standard(tabindex='-1' role='option' data-dial-code='223' data-country-code='ml')
+                .flag-box
+                  .iti-flag.ml
+                span.country-name Mali
+                span.dial-code +223
+              li#iti-item-mt.country.standard(tabindex='-1' role='option' data-dial-code='356' data-country-code='mt')
+                .flag-box
+                  .iti-flag.mt
+                span.country-name Malta
+                span.dial-code +356
+              li#iti-item-mh.country.standard(tabindex='-1' role='option' data-dial-code='692' data-country-code='mh')
+                .flag-box
+                  .iti-flag.mh
+                span.country-name Marshall Islands
+                span.dial-code +692
+              li#iti-item-mq.country.standard(tabindex='-1' role='option' data-dial-code='596' data-country-code='mq')
+                .flag-box
+                  .iti-flag.mq
+                span.country-name Martinique
+                span.dial-code +596
+              li#iti-item-mr.country.standard(tabindex='-1' role='option' data-dial-code='222' data-country-code='mr')
+                .flag-box
+                  .iti-flag.mr
+                span.country-name Mauritania (&#x202B;&#x645;&#x648;&#x631;&#x64A;&#x62A;&#x627;&#x646;&#x64A;&#x627;&#x202C;&lrm;)
+                span.dial-code +222
+              li#iti-item-mu.country.standard(tabindex='-1' role='option' data-dial-code='230' data-country-code='mu')
+                .flag-box
+                  .iti-flag.mu
+                span.country-name Mauritius (Moris)
+                span.dial-code +230
+              li#iti-item-yt.country.standard(tabindex='-1' role='option' data-dial-code='262' data-country-code='yt')
+                .flag-box
+                  .iti-flag.yt
+                span.country-name Mayotte
+                span.dial-code +262
+              li#iti-item-mx.country.standard(tabindex='-1' role='option' data-dial-code='52' data-country-code='mx')
+                .flag-box
+                  .iti-flag.mx
+                span.country-name Mexico (M&eacute;xico)
+                span.dial-code +52
+              li#iti-item-fm.country.standard(tabindex='-1' role='option' data-dial-code='691' data-country-code='fm')
+                .flag-box
+                  .iti-flag.fm
+                span.country-name Micronesia
+                span.dial-code +691
+              li#iti-item-md.country.standard(tabindex='-1' role='option' data-dial-code='373' data-country-code='md')
+                .flag-box
+                  .iti-flag.md
+                span.country-name Moldova (Republica Moldova)
+                span.dial-code +373
+              li#iti-item-mc.country.standard(tabindex='-1' role='option' data-dial-code='377' data-country-code='mc')
+                .flag-box
+                  .iti-flag.mc
+                span.country-name Monaco
+                span.dial-code +377
+              li#iti-item-mn.country.standard(tabindex='-1' role='option' data-dial-code='976' data-country-code='mn')
+                .flag-box
+                  .iti-flag.mn
+                span.country-name Mongolia (&Mcy;&ocy;&ncy;&gcy;&ocy;&lcy;)
+                span.dial-code +976
+              li#iti-item-me.country.standard(tabindex='-1' role='option' data-dial-code='382' data-country-code='me')
+                .flag-box
+                  .iti-flag.me
+                span.country-name Montenegro (Crna Gora)
+                span.dial-code +382
+              li#iti-item-ms.country.standard(tabindex='-1' role='option' data-dial-code='1664' data-country-code='ms')
+                .flag-box
+                  .iti-flag.ms
+                span.country-name Montserrat
+                span.dial-code +1664
+              li#iti-item-ma.country.standard(tabindex='-1' role='option' data-dial-code='212' data-country-code='ma')
+                .flag-box
+                  .iti-flag.ma
+                span.country-name Morocco (&#x202B;&#x627;&#x644;&#x645;&#x63A;&#x631;&#x628;&#x202C;&lrm;)
+                span.dial-code +212
+              li#iti-item-mz.country.standard(tabindex='-1' role='option' data-dial-code='258' data-country-code='mz')
+                .flag-box
+                  .iti-flag.mz
+                span.country-name Mozambique (Mo&ccedil;ambique)
+                span.dial-code +258
+              li#iti-item-mm.country.standard(tabindex='-1' role='option' data-dial-code='95' data-country-code='mm')
+                .flag-box
+                  .iti-flag.mm
+                span.country-name Myanmar (Burma) (&#x1019;&#x103C;&#x1014;&#x103A;&#x1019;&#x102C;)
+                span.dial-code +95
+              li#iti-item-na.country.standard(tabindex='-1' role='option' data-dial-code='264' data-country-code='na')
+                .flag-box
+                  .iti-flag.na
+                span.country-name Namibia (Namibi&euml;)
+                span.dial-code +264
+              li#iti-item-nr.country.standard(tabindex='-1' role='option' data-dial-code='674' data-country-code='nr')
+                .flag-box
+                  .iti-flag.nr
+                span.country-name Nauru
+                span.dial-code +674
+              li#iti-item-np.country.standard(tabindex='-1' role='option' data-dial-code='977' data-country-code='np')
+                .flag-box
+                  .iti-flag.np
+                span.country-name Nepal (&#x928;&#x947;&#x92A;&#x93E;&#x932;)
+                span.dial-code +977
+              li#iti-item-nl.country.standard(tabindex='-1' role='option' data-dial-code='31' data-country-code='nl')
+                .flag-box
+                  .iti-flag.nl
+                span.country-name Netherlands (Nederland)
+                span.dial-code +31
+              li#iti-item-nc.country.standard(tabindex='-1' role='option' data-dial-code='687' data-country-code='nc')
+                .flag-box
+                  .iti-flag.nc
+                span.country-name New Caledonia (Nouvelle-Cal&eacute;donie)
+                span.dial-code +687
+              li#iti-item-nz.country.standard(tabindex='-1' role='option' data-dial-code='64' data-country-code='nz')
+                .flag-box
+                  .iti-flag.nz
+                span.country-name New Zealand
+                span.dial-code +64
+              li#iti-item-ni.country.standard(tabindex='-1' role='option' data-dial-code='505' data-country-code='ni')
+                .flag-box
+                  .iti-flag.ni
+                span.country-name Nicaragua
+                span.dial-code +505
+              li#iti-item-ne.country.standard(tabindex='-1' role='option' data-dial-code='227' data-country-code='ne')
+                .flag-box
+                  .iti-flag.ne
+                span.country-name Niger (Nijar)
+                span.dial-code +227
+              li#iti-item-ng.country.standard(tabindex='-1' role='option' data-dial-code='234' data-country-code='ng')
+                .flag-box
+                  .iti-flag.ng
+                span.country-name Nigeria
+                span.dial-code +234
+              li#iti-item-nu.country.standard(tabindex='-1' role='option' data-dial-code='683' data-country-code='nu')
+                .flag-box
+                  .iti-flag.nu
+                span.country-name Niue
+                span.dial-code +683
+              li#iti-item-nf.country.standard(tabindex='-1' role='option' data-dial-code='672' data-country-code='nf')
+                .flag-box
+                  .iti-flag.nf
+                span.country-name Norfolk Island
+                span.dial-code +672
+              li#iti-item-kp.country.standard(tabindex='-1' role='option' data-dial-code='850' data-country-code='kp')
+                .flag-box
+                  .iti-flag.kp
+                span.country-name North Korea (&#xC870;&#xC120; &#xBBFC;&#xC8FC;&#xC8FC;&#xC758; &#xC778;&#xBBFC; &#xACF5;&#xD654;&#xAD6D;)
+                span.dial-code +850
+              li#iti-item-mp.country.standard(tabindex='-1' role='option' data-dial-code='1670' data-country-code='mp')
+                .flag-box
+                  .iti-flag.mp
+                span.country-name Northern Mariana Islands
+                span.dial-code +1670
+              li#iti-item-no.country.standard(tabindex='-1' role='option' data-dial-code='47' data-country-code='no')
+                .flag-box
+                  .iti-flag.no
+                span.country-name Norway (Norge)
+                span.dial-code +47
+              li#iti-item-om.country.standard(tabindex='-1' role='option' data-dial-code='968' data-country-code='om')
+                .flag-box
+                  .iti-flag.om
+                span.country-name Oman (&#x202B;&#x639;&#x64F;&#x645;&#x627;&#x646;&#x202C;&lrm;)
+                span.dial-code +968
+              li#iti-item-pk.country.standard(tabindex='-1' role='option' data-dial-code='92' data-country-code='pk')
+                .flag-box
+                  .iti-flag.pk
+                span.country-name Pakistan (&#x202B;&#x67E;&#x627;&#x6A9;&#x633;&#x62A;&#x627;&#x646;&#x202C;&lrm;)
+                span.dial-code +92
+              li#iti-item-pw.country.standard(tabindex='-1' role='option' data-dial-code='680' data-country-code='pw')
+                .flag-box
+                  .iti-flag.pw
+                span.country-name Palau
+                span.dial-code +680
+              li#iti-item-ps.country.standard(tabindex='-1' role='option' data-dial-code='970' data-country-code='ps')
+                .flag-box
+                  .iti-flag.ps
+                span.country-name Palestine (&#x202B;&#x641;&#x644;&#x633;&#x637;&#x64A;&#x646;&#x202C;&lrm;)
+                span.dial-code +970
+              li#iti-item-pa.country.standard(tabindex='-1' role='option' data-dial-code='507' data-country-code='pa')
+                .flag-box
+                  .iti-flag.pa
+                span.country-name Panama (Panam&aacute;)
+                span.dial-code +507
+              li#iti-item-pg.country.standard(tabindex='-1' role='option' data-dial-code='675' data-country-code='pg')
+                .flag-box
+                  .iti-flag.pg
+                span.country-name Papua New Guinea
+                span.dial-code +675
+              li#iti-item-py.country.standard(tabindex='-1' role='option' data-dial-code='595' data-country-code='py')
+                .flag-box
+                  .iti-flag.py
+                span.country-name Paraguay
+                span.dial-code +595
+              li#iti-item-pe.country.standard(tabindex='-1' role='option' data-dial-code='51' data-country-code='pe')
+                .flag-box
+                  .iti-flag.pe
+                span.country-name Peru (Per&uacute;)
+                span.dial-code +51
+              li#iti-item-ph.country.standard(tabindex='-1' role='option' data-dial-code='63' data-country-code='ph')
+                .flag-box
+                  .iti-flag.ph
+                span.country-name Philippines
+                span.dial-code +63
+              li#iti-item-pl.country.standard(tabindex='-1' role='option' data-dial-code='48' data-country-code='pl')
+                .flag-box
+                  .iti-flag.pl
+                span.country-name Poland (Polska)
+                span.dial-code +48
+              li#iti-item-pt.country.standard(tabindex='-1' role='option' data-dial-code='351' data-country-code='pt')
+                .flag-box
+                  .iti-flag.pt
+                span.country-name Portugal
+                span.dial-code +351
+              li#iti-item-pr.country.standard(tabindex='-1' role='option' data-dial-code='1' data-country-code='pr')
+                .flag-box
+                  .iti-flag.pr
+                span.country-name Puerto Rico
+                span.dial-code +1
+              li#iti-item-qa.country.standard(tabindex='-1' role='option' data-dial-code='974' data-country-code='qa')
+                .flag-box
+                  .iti-flag.qa
+                span.country-name Qatar (&#x202B;&#x642;&#x637;&#x631;&#x202C;&lrm;)
+                span.dial-code +974
+              li#iti-item-re.country.standard(tabindex='-1' role='option' data-dial-code='262' data-country-code='re')
+                .flag-box
+                  .iti-flag.re
+                span.country-name R&eacute;union (La R&eacute;union)
+                span.dial-code +262
+              li#iti-item-ro.country.standard(tabindex='-1' role='option' data-dial-code='40' data-country-code='ro')
+                .flag-box
+                  .iti-flag.ro
+                span.country-name Romania (Rom&acirc;nia)
+                span.dial-code +40
+              li#iti-item-ru.country.standard(tabindex='-1' role='option' data-dial-code='7' data-country-code='ru')
+                .flag-box
+                  .iti-flag.ru
+                span.country-name Russia (&Rcy;&ocy;&scy;&scy;&icy;&yacy;)
+                span.dial-code +7
+              li#iti-item-rw.country.standard(tabindex='-1' role='option' data-dial-code='250' data-country-code='rw')
+                .flag-box
+                  .iti-flag.rw
+                span.country-name Rwanda
+                span.dial-code +250
+              li#iti-item-bl.country.standard(tabindex='-1' role='option' data-dial-code='590' data-country-code='bl')
+                .flag-box
+                  .iti-flag.bl
+                span.country-name Saint Barth&eacute;lemy
+                span.dial-code +590
+              li#iti-item-sh.country.standard(tabindex='-1' role='option' data-dial-code='290' data-country-code='sh')
+                .flag-box
+                  .iti-flag.sh
+                span.country-name Saint Helena
+                span.dial-code +290
+              li#iti-item-kn.country.standard(tabindex='-1' role='option' data-dial-code='1869' data-country-code='kn')
+                .flag-box
+                  .iti-flag.kn
+                span.country-name Saint Kitts and Nevis
+                span.dial-code +1869
+              li#iti-item-lc.country.standard(tabindex='-1' role='option' data-dial-code='1758' data-country-code='lc')
+                .flag-box
+                  .iti-flag.lc
+                span.country-name Saint Lucia
+                span.dial-code +1758
+              li#iti-item-mf.country.standard(tabindex='-1' role='option' data-dial-code='590' data-country-code='mf')
+                .flag-box
+                  .iti-flag.mf
+                span.country-name Saint Martin (Saint-Martin (partie fran&ccedil;aise))
+                span.dial-code +590
+              li#iti-item-pm.country.standard(tabindex='-1' role='option' data-dial-code='508' data-country-code='pm')
+                .flag-box
+                  .iti-flag.pm
+                span.country-name Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)
+                span.dial-code +508
+              li#iti-item-vc.country.standard(tabindex='-1' role='option' data-dial-code='1784' data-country-code='vc')
+                .flag-box
+                  .iti-flag.vc
+                span.country-name Saint Vincent and the Grenadines
+                span.dial-code +1784
+              li#iti-item-ws.country.standard(tabindex='-1' role='option' data-dial-code='685' data-country-code='ws')
+                .flag-box
+                  .iti-flag.ws
+                span.country-name Samoa
+                span.dial-code +685
+              li#iti-item-sm.country.standard(tabindex='-1' role='option' data-dial-code='378' data-country-code='sm')
+                .flag-box
+                  .iti-flag.sm
+                span.country-name San Marino
+                span.dial-code +378
+              li#iti-item-st.country.standard(tabindex='-1' role='option' data-dial-code='239' data-country-code='st')
+                .flag-box
+                  .iti-flag.st
+                span.country-name S&atilde;o Tom&eacute; and Pr&iacute;ncipe (S&atilde;o Tom&eacute; e Pr&iacute;ncipe)
+                span.dial-code +239
+              li#iti-item-sa.country.standard(tabindex='-1' role='option' data-dial-code='966' data-country-code='sa')
+                .flag-box
+                  .iti-flag.sa
+                span.country-name Saudi Arabia (&#x202B;&#x627;&#x644;&#x645;&#x645;&#x644;&#x643;&#x629; &#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629; &#x627;&#x644;&#x633;&#x639;&#x648;&#x62F;&#x64A;&#x629;&#x202C;&lrm;)
+                span.dial-code +966
+              li#iti-item-sn.country.standard(tabindex='-1' role='option' data-dial-code='221' data-country-code='sn')
+                .flag-box
+                  .iti-flag.sn
+                span.country-name Senegal (S&eacute;n&eacute;gal)
+                span.dial-code +221
+              li#iti-item-rs.country.standard(tabindex='-1' role='option' data-dial-code='381' data-country-code='rs')
+                .flag-box
+                  .iti-flag.rs
+                span.country-name Serbia (&Scy;&rcy;&bcy;&icy;&jsercy;&acy;)
+                span.dial-code +381
+              li#iti-item-sc.country.standard(tabindex='-1' role='option' data-dial-code='248' data-country-code='sc')
+                .flag-box
+                  .iti-flag.sc
+                span.country-name Seychelles
+                span.dial-code +248
+              li#iti-item-sl.country.standard(tabindex='-1' role='option' data-dial-code='232' data-country-code='sl')
+                .flag-box
+                  .iti-flag.sl
+                span.country-name Sierra Leone
+                span.dial-code +232
+              li#iti-item-sg.country.standard(tabindex='-1' role='option' data-dial-code='65' data-country-code='sg')
+                .flag-box
+                  .iti-flag.sg
+                span.country-name Singapore
+                span.dial-code +65
+              li#iti-item-sx.country.standard(tabindex='-1' role='option' data-dial-code='1721' data-country-code='sx')
+                .flag-box
+                  .iti-flag.sx
+                span.country-name Sint Maarten
+                span.dial-code +1721
+              li#iti-item-sk.country.standard(tabindex='-1' role='option' data-dial-code='421' data-country-code='sk')
+                .flag-box
+                  .iti-flag.sk
+                span.country-name Slovakia (Slovensko)
+                span.dial-code +421
+              li#iti-item-si.country.standard(tabindex='-1' role='option' data-dial-code='386' data-country-code='si')
+                .flag-box
+                  .iti-flag.si
+                span.country-name Slovenia (Slovenija)
+                span.dial-code +386
+              li#iti-item-sb.country.standard(tabindex='-1' role='option' data-dial-code='677' data-country-code='sb')
+                .flag-box
+                  .iti-flag.sb
+                span.country-name Solomon Islands
+                span.dial-code +677
+              li#iti-item-so.country.standard(tabindex='-1' role='option' data-dial-code='252' data-country-code='so')
+                .flag-box
+                  .iti-flag.so
+                span.country-name Somalia (Soomaaliya)
+                span.dial-code +252
+              li#iti-item-za.country.standard(tabindex='-1' role='option' data-dial-code='27' data-country-code='za')
+                .flag-box
+                  .iti-flag.za
+                span.country-name South Africa
+                span.dial-code +27
+              li#iti-item-kr.country.standard(tabindex='-1' role='option' data-dial-code='82' data-country-code='kr')
+                .flag-box
+                  .iti-flag.kr
+                span.country-name South Korea (&#xB300;&#xD55C;&#xBBFC;&#xAD6D;)
+                span.dial-code +82
+              li#iti-item-ss.country.standard(tabindex='-1' role='option' data-dial-code='211' data-country-code='ss')
+                .flag-box
+                  .iti-flag.ss
+                span.country-name South Sudan (&#x202B;&#x62C;&#x646;&#x648;&#x628; &#x627;&#x644;&#x633;&#x648;&#x62F;&#x627;&#x646;&#x202C;&lrm;)
+                span.dial-code +211
+              li#iti-item-es.country.standard(tabindex='-1' role='option' data-dial-code='34' data-country-code='es')
+                .flag-box
+                  .iti-flag.es
+                span.country-name Spain (Espa&ntilde;a)
+                span.dial-code +34
+              li#iti-item-lk.country.standard(tabindex='-1' role='option' data-dial-code='94' data-country-code='lk')
+                .flag-box
+                  .iti-flag.lk
+                span.country-name Sri Lanka (&#xDC1;&#xDCA;&zwj;&#xDBB;&#xDD3; &#xDBD;&#xD82;&#xD9A;&#xDCF;&#xDC0;)
+                span.dial-code +94
+              li#iti-item-sd.country.standard(tabindex='-1' role='option' data-dial-code='249' data-country-code='sd')
+                .flag-box
+                  .iti-flag.sd
+                span.country-name Sudan (&#x202B;&#x627;&#x644;&#x633;&#x648;&#x62F;&#x627;&#x646;&#x202C;&lrm;)
+                span.dial-code +249
+              li#iti-item-sr.country.standard(tabindex='-1' role='option' data-dial-code='597' data-country-code='sr')
+                .flag-box
+                  .iti-flag.sr
+                span.country-name Suriname
+                span.dial-code +597
+              li#iti-item-sj.country.standard(tabindex='-1' role='option' data-dial-code='47' data-country-code='sj')
+                .flag-box
+                  .iti-flag.sj
+                span.country-name Svalbard and Jan Mayen
+                span.dial-code +47
+              li#iti-item-sz.country.standard(tabindex='-1' role='option' data-dial-code='268' data-country-code='sz')
+                .flag-box
+                  .iti-flag.sz
+                span.country-name Swaziland
+                span.dial-code +268
+              li#iti-item-se.country.standard(tabindex='-1' role='option' data-dial-code='46' data-country-code='se')
+                .flag-box
+                  .iti-flag.se
+                span.country-name Sweden (Sverige)
+                span.dial-code +46
+              li#iti-item-ch.country.standard(tabindex='-1' role='option' data-dial-code='41' data-country-code='ch')
+                .flag-box
+                  .iti-flag.ch
+                span.country-name Switzerland (Schweiz)
+                span.dial-code +41
+              li#iti-item-sy.country.standard(tabindex='-1' role='option' data-dial-code='963' data-country-code='sy')
+                .flag-box
+                  .iti-flag.sy
+                span.country-name Syria (&#x202B;&#x633;&#x648;&#x631;&#x64A;&#x627;&#x202C;&lrm;)
+                span.dial-code +963
+              li#iti-item-tw.country.standard(tabindex='-1' role='option' data-dial-code='886' data-country-code='tw')
+                .flag-box
+                  .iti-flag.tw
+                span.country-name Taiwan (&#x53F0;&#x7063;)
+                span.dial-code +886
+              li#iti-item-tj.country.standard(tabindex='-1' role='option' data-dial-code='992' data-country-code='tj')
+                .flag-box
+                  .iti-flag.tj
+                span.country-name Tajikistan
+                span.dial-code +992
+              li#iti-item-tz.country.standard(tabindex='-1' role='option' data-dial-code='255' data-country-code='tz')
+                .flag-box
+                  .iti-flag.tz
+                span.country-name Tanzania
+                span.dial-code +255
+              li#iti-item-th.country.standard(tabindex='-1' role='option' data-dial-code='66' data-country-code='th')
+                .flag-box
+                  .iti-flag.th
+                span.country-name Thailand (&#xE44;&#xE17;&#xE22;)
+                span.dial-code +66
+              li#iti-item-tl.country.standard(tabindex='-1' role='option' data-dial-code='670' data-country-code='tl')
+                .flag-box
+                  .iti-flag.tl
+                span.country-name Timor-Leste
+                span.dial-code +670
+              li#iti-item-tg.country.standard(tabindex='-1' role='option' data-dial-code='228' data-country-code='tg')
+                .flag-box
+                  .iti-flag.tg
+                span.country-name Togo
+                span.dial-code +228
+              li#iti-item-tk.country.standard(tabindex='-1' role='option' data-dial-code='690' data-country-code='tk')
+                .flag-box
+                  .iti-flag.tk
+                span.country-name Tokelau
+                span.dial-code +690
+              li#iti-item-to.country.standard(tabindex='-1' role='option' data-dial-code='676' data-country-code='to')
+                .flag-box
+                  .iti-flag.to
+                span.country-name Tonga
+                span.dial-code +676
+              li#iti-item-tt.country.standard(tabindex='-1' role='option' data-dial-code='1868' data-country-code='tt')
+                .flag-box
+                  .iti-flag.tt
+                span.country-name Trinidad and Tobago
+                span.dial-code +1868
+              li#iti-item-tn.country.standard(tabindex='-1' role='option' data-dial-code='216' data-country-code='tn')
+                .flag-box
+                  .iti-flag.tn
+                span.country-name Tunisia (&#x202B;&#x62A;&#x648;&#x646;&#x633;&#x202C;&lrm;)
+                span.dial-code +216
+              li#iti-item-tr.country.standard(tabindex='-1' role='option' data-dial-code='90' data-country-code='tr')
+                .flag-box
+                  .iti-flag.tr
+                span.country-name Turkey (T&uuml;rkiye)
+                span.dial-code +90
+              li#iti-item-tm.country.standard(tabindex='-1' role='option' data-dial-code='993' data-country-code='tm')
+                .flag-box
+                  .iti-flag.tm
+                span.country-name Turkmenistan
+                span.dial-code +993
+              li#iti-item-tc.country.standard(tabindex='-1' role='option' data-dial-code='1649' data-country-code='tc')
+                .flag-box
+                  .iti-flag.tc
+                span.country-name Turks and Caicos Islands
+                span.dial-code +1649
+              li#iti-item-tv.country.standard(tabindex='-1' role='option' data-dial-code='688' data-country-code='tv')
+                .flag-box
+                  .iti-flag.tv
+                span.country-name Tuvalu
+                span.dial-code +688
+              li#iti-item-vi.country.standard(tabindex='-1' role='option' data-dial-code='1340' data-country-code='vi')
+                .flag-box
+                  .iti-flag.vi
+                span.country-name U.S. Virgin Islands
+                span.dial-code +1340
+              li#iti-item-ug.country.standard(tabindex='-1' role='option' data-dial-code='256' data-country-code='ug')
+                .flag-box
+                  .iti-flag.ug
+                span.country-name Uganda
+                span.dial-code +256
+              li#iti-item-ua.country.standard(tabindex='-1' role='option' data-dial-code='380' data-country-code='ua')
+                .flag-box
+                  .iti-flag.ua
+                span.country-name Ukraine (&Ucy;&kcy;&rcy;&acy;&yicy;&ncy;&acy;)
+                span.dial-code +380
+              li#iti-item-ae.country.standard(tabindex='-1' role='option' data-dial-code='971' data-country-code='ae')
+                .flag-box
+                  .iti-flag.ae
+                span.country-name United Arab Emirates (&#x202B;&#x627;&#x644;&#x625;&#x645;&#x627;&#x631;&#x627;&#x62A; &#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629; &#x627;&#x644;&#x645;&#x62A;&#x62D;&#x62F;&#x629;&#x202C;&lrm;)
+                span.dial-code +971
+              li#iti-item-gb.country.standard(tabindex='-1' role='option' data-dial-code='44' data-country-code='gb')
+                .flag-box
+                  .iti-flag.gb
+                span.country-name United Kingdom
+                span.dial-code +44
+              li#iti-item-us.country.standard(tabindex='-1' role='option' data-dial-code='1' data-country-code='us')
+                .flag-box
+                  .iti-flag.us
+                span.country-name United States
+                span.dial-code +1
+              li#iti-item-uy.country.standard(tabindex='-1' role='option' data-dial-code='598' data-country-code='uy')
+                .flag-box
+                  .iti-flag.uy
+                span.country-name Uruguay
+                span.dial-code +598
+              li#iti-item-uz.country.standard(tabindex='-1' role='option' data-dial-code='998' data-country-code='uz')
+                .flag-box
+                  .iti-flag.uz
+                span.country-name Uzbekistan (O&#x2BB;zbekiston)
+                span.dial-code +998
+              li#iti-item-vu.country.standard(tabindex='-1' role='option' data-dial-code='678' data-country-code='vu')
+                .flag-box
+                  .iti-flag.vu
+                span.country-name Vanuatu
+                span.dial-code +678
+              li#iti-item-va.country.standard(tabindex='-1' role='option' data-dial-code='39' data-country-code='va')
+                .flag-box
+                  .iti-flag.va
+                span.country-name Vatican City (Citt&agrave; del Vaticano)
+                span.dial-code +39
+              li#iti-item-ve.country.standard(tabindex='-1' role='option' data-dial-code='58' data-country-code='ve')
+                .flag-box
+                  .iti-flag.ve
+                span.country-name Venezuela
+                span.dial-code +58
+              li#iti-item-vn.country.standard(tabindex='-1' role='option' data-dial-code='84' data-country-code='vn')
+                .flag-box
+                  .iti-flag.vn
+                span.country-name Vietnam (Vi&#x1EC7;t Nam)
+                span.dial-code +84
+              li#iti-item-wf.country.standard(tabindex='-1' role='option' data-dial-code='681' data-country-code='wf')
+                .flag-box
+                  .iti-flag.wf
+                span.country-name Wallis and Futuna (Wallis-et-Futuna)
+                span.dial-code +681
+              li#iti-item-eh.country.standard(tabindex='-1' role='option' data-dial-code='212' data-country-code='eh')
+                .flag-box
+                  .iti-flag.eh
+                span.country-name Western Sahara (&#x202B;&#x627;&#x644;&#x635;&#x62D;&#x631;&#x627;&#x621; &#x627;&#x644;&#x63A;&#x631;&#x628;&#x64A;&#x629;&#x202C;&lrm;)
+                span.dial-code +212
+              li#iti-item-ye.country.standard(tabindex='-1' role='option' data-dial-code='967' data-country-code='ye')
+                .flag-box
+                  .iti-flag.ye
+                span.country-name Yemen (&#x202B;&#x627;&#x644;&#x64A;&#x645;&#x646;&#x202C;&lrm;)
+                span.dial-code +967
+              li#iti-item-zm.country.standard(tabindex='-1' role='option' data-dial-code='260' data-country-code='zm')
+                .flag-box
+                  .iti-flag.zm
+                span.country-name Zambia
+                span.dial-code +260
+              li#iti-item-zw.country.standard(tabindex='-1' role='option' data-dial-code='263' data-country-code='zw')
+                .flag-box
+                  .iti-flag.zw
+                span.country-name Zimbabwe
+                span.dial-code +263
+              li#iti-item-ax.country.standard(tabindex='-1' role='option' data-dial-code='358' data-country-code='ax')
+                .flag-box
+                  .iti-flag.ax
+                span.country-name &angst;land Islands
+                span.dial-code +358
+          input(type='tel' name='phone-num' placeholder='Phone' autocomplete='off' data-intl-tel-input-id='0')
+    label.form-input.form-checkbox
+      input(type='checkbox' name='terms')
+      span.form-checkbox-icon
+      span.form-checkbox-descr.text
+        | By checking this box I agree to the Monfex
+        a(href='https://www.monfex.com/privacy-policy' target='_blank') Privacy Policy
+        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;and
+        a(href='https://www.monfex.com/terms-of-service' target='_blank') Terms of Service
+        | .
+    // /.form-input
+    input.input-hidden(type='hidden' name='country' value='' autocomplete='off')
+    input.input-hidden(type='hidden' name='phone' value='')
+    input.input-hidden(type='hidden' name='ga_cid' value='')
+    input(type='hidden' name='uri_query' value='')
+    input(type='hidden' name='affiliate_code' value='')
+    input(type='hidden' name='partner_link' value='')
+    input(type='hidden' name='source' value='invest')
+    button.form-btn.btn(type='submit')
+      | Join Now !
+      .loader
+        div
+        div
+        div
+        div
+        div
+        div
+        div
+        div
+        div
+        div
+        div
+        div
+  .register-form-descr.text
+    | Already have a Monfex account? Please 
+    a(href='https://trade.monfex.com' target='_blank') login
+    | .

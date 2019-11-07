@@ -1,0 +1,85 @@
+extends not-compiling/_layout
+
+block title
+	title Index page
+block head
+	meta(name="keywords" content="")
+	meta(name="description" content="")
+
+
+block content
+	main
+		section.intro
+			.intro__container
+				.intro__heading
+					img(src="img/logo.svg", alt="MonFex")
+				.intro__box
+					.intro__left
+						span.intro__pre-title The basics of online trading:
+						h1.intro__title 
+							| How  
+							span Money  
+							| makes money
+						p.intro__subtitle The book will convince you that it is easy to trade on the stock exchange
+						ul.intro__list
+							li Money should always work.
+							li Today is the best moment to start!
+						.intro__benefits
+							p 1 hour <br> to read
+							p Facts and  <br>  benefits only
+							p Examples  <br>  from practice
+						.intro__left-bottom
+							.counter
+							a.btn(href="#") Download
+					.intro__right
+						picture
+							source(type="image/webp" srcset="img/intro-bg.webp")
+							source(type="image/png" srcset="img/intro-bg.png")
+							img(src="img/intro-bg.png", alt="")
+
+							//- img(src="image.jpg" alt="Моя картинка)
+		section.adv
+			.adv__container
+				h2.adv__title 
+					| After reading this book, you will learn more about 
+					span the financial market:
+				.adv__content
+					.adv__item Principles of profitabledeals in detail 
+					.adv__item Market psychology for a steady income
+					.adv__item Earning secrets regarding each instrument
+
+		section.sub
+			.sub__container
+				.sub__box
+					.sub__left
+						span.sub__pre-title The book will answer the main question: 
+						h2.sub__title  “How to start trading safely and profitably?”
+						.sub__steps
+							h3.sub__steps-title Make only two steps:
+							p.sub__steps-item.ico-cloud Available knowledge to enter the world of the financial market
+							p.sub__steps-item.ico-comp Personalized counselling from a professional investor
+						p.sub__cta-text Download “The basics of online trading” and fing out how to multiply your savings!
+					.sub__right
+						
+						include not-compiling/form.pug
+						script.
+							var srcUtils = "intlTel/js/utils.js"
+
+
+		footer.footer
+			.footer__logo
+				img(src="img/visa-pay-logo.svg", alt="Visa")
+				span.footer__logo-separator
+				img(src="img/master-card-logo.svg", alt="Maestro card")
+				span.footer__logo-separator
+				img(src="img/maestro-pay-logo.svg", alt="Maestro pay")
+				span.footer__logo-separator
+				img(src="img/neteller-logo.svg", alt="Neteller")
+	
+			.footer__links
+				a(href="#") Terms and Conditions
+				span.footer__links-separator
+				a(href="#") Privacy Policy
+				span.footer__links-separator
+				a(href="#") Risk disklaimer
+			p.footer__out Trading in the financial market allows you to make big profits, but it also involves certain risks. Make sure you understand the risks involved by consulting one of our representatives. By filling out the registration form on this page, you agree to share your personal information.
