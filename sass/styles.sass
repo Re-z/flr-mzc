@@ -1,5 +1,5 @@
 $desc: 1240
-$tab: 1024
+$tab: 1023
 $mob: 760
 
 $green: #00AA80
@@ -7,7 +7,6 @@ $orange: #FDD762
 
 @import 'not-compiling/reset'
 @import 'form.sass'
-
 
 
 =r($width)
@@ -40,6 +39,8 @@ body
         padding: 50px 10px
         width: 1260px
         margin: 0 auto
+        +r($desc)
+            width: 100%
     &__heading
         margin-bottom: 45px
     &__box
@@ -137,6 +138,12 @@ body
         padding: 40px 30px 80px 30px
         width: 1240px
         margin: 0 auto
+        +r($desc)
+            width: 100%
+        +r($tab)
+            padding: 40px
+        +r($mob)
+            padding: 30px 10px
     &__title
         font-size: 30px
         font-weight: bold
@@ -149,6 +156,10 @@ body
         display: flex
         justify-content: space-between
         counter-reset: item
+        +r($tab)
+            margin-top: 40px
+            display: block
+            text-align: center
     &__item
         font-size: 22px
         position: relative
@@ -157,6 +168,14 @@ body
         line-height: 30px
         max-width: 190px
         box-sizing: content-box
+        +r($tab)
+            max-width: 100%
+            padding-left: 0
+            margin-bottom: 15px
+        +r($mob)
+            padding-left: 70px
+            text-align: left
+            margin-bottom: 25px
         &:before
             position: absolute
             left: 0
@@ -174,6 +193,18 @@ body
             text-align: center
             font-weight: bold
             font-size: 30px
+            +r($tab)
+                // display: none
+                position: static
+                margin-top: 0
+                font-size: 24px
+                width: 40px
+                height: 40px
+                line-height: 40px
+                margin-right: 15px
+            +r($mob)
+                position: absolute
+                top: 0px
 .sub
     background: #FBFBFB
     color: #2D2F32
@@ -181,12 +212,24 @@ body
         padding: 50px 10px
         width: 1260px
         margin: 0 auto
+        +r($desc)
+            width: 100%
     &__box
         display: flex
+        flex-wrap: wrap
+        +r($desc)
+            width: 100%
     &__left
         max-width: 520px
         margin-right: 200px
+        +r($desc)
+            max-width: 100%
+            margin-right: 0
+            text-align: center
     &__right
+        +r($desc)
+            width: 100%
+            margin-top: 30px
     &__pre-title
         font-size: 23px
         color: #2D2F32
@@ -198,12 +241,17 @@ body
     &__steps
         margin: 40px 0
         padding-left: 90px
-        
+        +r($desc)
+            padding-left: 0
+            margin-top: 100px
+            margin: 100px 0 30px 0
     &__steps-title
         font-size: 23px
         font-weight: bold
         margin-bottom: 30px
         position: relative
+        +r($desc)
+            margin-bottom: 20px
         &:before
             display: inline-block
             content: ''
@@ -214,11 +262,21 @@ body
             position: absolute
             left: -90px
             top: -25px 
+            +r($desc)
+                background-image: url(../img/arrow-down.svg)
+                left: 50%
+                transform: translateX(-50%)
+                height: 71px
+                top: -80px
     &__steps-item
         font-size: 20px
         line-height: 27px
         position: relative
         margin-bottom: 30px
+        +r($desc)
+            display: inline-block
+            vertical-align: middle
+            margin-bottom: 20px
         &:last-of-type
             margin-bottom: 0
         &:before
@@ -228,14 +286,27 @@ body
             transform: translateY(-50%)
             content: ''
             display: inline-block
+            +r($desc)
+                position: static
+                vertical-align: middle
+                margin-right: 15px
+                transform: translateY(-0%)
+            +r($mob)
+                display: block
+                margin: 0 auto 10px auto
+
         &.ico-cloud
             padding-left: 83px
+            +r($desc)
+                padding-left: 0
             &:before
                 background: url(../img/cloud.svg) center center no-repeat
                 width: 58px
                 height: 58px
         &.ico-comp
             padding-left: 75px
+            +r($desc)
+                padding-left: 0
             &:before
                 background: url(../img/comp.svg) center center no-repeat
                 width: 50px
@@ -252,6 +323,8 @@ body
         img
             display: inline-block
             vertical-align: middle
+            +r($mob)
+                margin: 0 10px 15px 10px
     &__logo-separator
         display: inline-block
         content: ''
@@ -260,15 +333,22 @@ body
         height: 10px
         width: 1px
         background: #616161
+        +r($mob)
+            display: none
     &__links
         margin: 30px 0 35px 0
         display: flex
         justify-content: center
+        +r($mob)
+            display: block
         a
             font-size: 11px
             font-weight: bold
             color: white
             text-decoration: underline
+            display: inline-block
+            +r($mob)
+                margin: 0 10px
             &:hover
                 color: $orange
     &__links-separator
@@ -277,6 +357,8 @@ body
         margin: 0 10px 0 10px
         width: 1px
         background: white
+        +r($mob)
+            display: none
     &__out
         color: #9F999B
         font-size: 12px
