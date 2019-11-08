@@ -1,0 +1,102 @@
+       
+.page-countdown__wrapper
+  min-height: 80px
+  padding: 28px 0 21px
+
+.page-countdown
+  position: relative
+  padding: 0 0 0 9px
+
+.page-countdown__block
+  font-size: 0
+
+.page-countdown__time-wrapper
+  display: inline-block
+  margin: 0 18px 0 0
+
+  &:last-child
+    margin-right: 0
+
+.page-countdown__time
+    position: relative
+    font-size: 55px
+    font-weight: bold
+    line-height: 49px
+.page-countdown__title
+    font-size: 16px
+    margin-bottom: 10px
+.page-countdown__text
+    font-size: 14px
+    line-height: 17px
+    text-align: center
+    margin-top: 5px
+.page-countdown__divider
+  display: inline-block
+  margin: 0 18px 0 0
+  font-size: 50px
+  line-height: 49px
+  color: #c8c8c8
+  vertical-align: top
+  border-radius: 50%
+
+@media screen and (max-width: 1400px)
+  .page-countdown
+    padding: 0
+
+@media screen and (max-width: 1219px)
+  .page-countdown
+    left: -23px
+
+@media screen and (max-width: 1195px)
+  .page-countdown
+    left: 0
+
+  .page-countdown__wrapper
+    min-height: 80px
+    padding: 93px 0 40px
+
+  .page-countdown
+    left: 35px
+
+@media screen and (max-width: 767px)
+  .page-countdown__wrapper
+    display: none
+
+  .page-countdown
+    left: 0
+
+  .page-countdown__block
+    max-width: none
+
+  .page-countdown__time-wrapper
+    margin: 0 5px 0 0
+
+  .page-countdown__time
+    font-size: 30px
+    line-height: 39px
+
+  .page-countdown__divider
+    margin: -5px 16px 0 0
+
+@media screen and (max-width: 390px)
+  .page-countdown
+    margin-left: 15px
+    margin-right: 15px
+
+//   .page-countdown__time-wrapper
+//     margin: 0 14px 0 0
+
+  .page-countdown__divider
+    margin: -5px 14px 0 0
+
+@media screen and (max-width: 350px)
+  .page-countdown__block
+    min-width: 260px
+
+  .page-countdown__time-wrapper
+    margin: 0 5px 0 0
+
+  .page-countdown__divider
+    margin: -5px 5px 0 0
+    font-size: 35px
+    line-height: 43px

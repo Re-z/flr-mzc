@@ -21,6 +21,11 @@ block content
 							span Money  
 							| makes money
 						p.intro__subtitle The book will convince you that it is easy to trade on the stock exchange
+						picture.intro__tab-pic
+							source(type="image/webp" srcset="img/intro-bg.webp")
+							source(type="image/png" srcset="img/intro-bg.png")
+							img(src="img/intro-bg.png", alt="")
+						
 						ul.intro__list
 							li Money should always work.
 							li Today is the best moment to start!
@@ -30,7 +35,6 @@ block content
 							p Examples  <br>  from practice
 						.intro__left-bottom
 							.intro__counter
-
 								.page-countdown__block
 									.page-countdown__title The action will end in
 									.page-countdown__time-wrapper
@@ -49,7 +53,7 @@ block content
 										.js-seconds.page-countdown__time 56
 										.page-countdown__text Seconds
 
-							a.btn.intro__btn(href="#") Download
+							a.btn.intro__btn(href="#sendForm") Download
 					.intro__right
 						picture.intro__pic
 							source(type="image/webp" srcset="img/intro-bg.webp")
@@ -93,9 +97,7 @@ block content
 				img(src="img/neteller-logo.svg", alt="Neteller")
 	
 			.footer__links
-				a(href="#") Terms and Conditions
+				a(href="https://www.monfex.com/terms-of-service") Terms and Conditions
 				span.footer__links-separator
-				a(href="#") Privacy Policy
-				span.footer__links-separator
-				a(href="#") Risk disclaimer
+				a(href="https://www.monfex.com/privacy-policy") Privacy Policy
 			p.footer__out Trading in the financial market allows you to make big profits, but it also involves certain risks. Make sure you understand the risks involved by consulting one of our representatives. By filling out the registration form on this page, you agree to share your personal information.
